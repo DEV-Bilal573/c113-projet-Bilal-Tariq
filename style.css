@@ -1,24 +1,24 @@
 .header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 16px;
-
+    background-image: url("photos/fried broast.jpg");
+    background-size: contain;
 }
 
+
+
 .titre{
-    font-family:"Bodoni MT Black", Serif;
-    font-size:  60px;
+    font-family:"Allura", cursive;
+    font-size: 85px;
     text-align: center;
-    font-weight: bold;
-    display: inline-block;
-    color: white;
-    background-color: #f5be5e;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 12px;
+    font-weight: 700;
+    display: inline;
+    letter-spacing: 15px;
+    color: ghostwhite;
+    background-color: #eab150;
+    border-radius: 50px;
+    margin-top: 150px;
+    margin-right: 20px;
+    margin-left: 50px;
 }
 
 body{
@@ -26,18 +26,20 @@ body{
 }
 
 .parametre {
-    width: 28px;
-    height: 22px;
+    width: 60px;
+    height: 34px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 6px;
-    margin-right: 10px;
+    margin: 25px;
+    background-color: #FFF8E7;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .parametre span {
     height: 3px;
     width: 100%;
-    background-color: #1a1a1a;
-    border-radius: 2px;
+    background-color: #3A1515;
+    border-radius: 5px;
 }
