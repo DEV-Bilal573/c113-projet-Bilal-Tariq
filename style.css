@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+
+}
+
+.titre{
+    font-family:"Bodoni MT Black", Serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    background-color: #f5be5e;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 12px;
+}
+
+body{
+    background-color: #FFF8E7;
+}
+
+.parametre {
+    width: 28px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.parametre span {
+    height: 3px;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-radius: 2px;
+}
