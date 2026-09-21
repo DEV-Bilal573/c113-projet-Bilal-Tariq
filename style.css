@@ -8,7 +8,7 @@
 
 .titre{
     font-family:"Bodoni MT Black", Serif;
-    font-size: 22px;
+    font-size:  60px;
     text-align: center;
     font-weight: bold;
     display: inline-block;
@@ -31,7 +31,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 16px;
+    margin-left: 6px;
+    margin-right: 10px;
 }
 
 .parametre span {
