@@ -1,31 +1,28 @@
 .header {
-    display: flex;
+    display: flex; /*Aligne les éléments facilement (comme des blocs qu'on peut ranger)*/
     background-image: url("photos/fried broast.jpg");
-    background-size: contain;
+    background-size: cover;
+    height: 270px;
+    padding: 20px 40px;
+    justify-content: space-between; /*Espace les éléments : un à gauche, un à droite*/
+    align-items: center;
 }
 
-
-
-.titre{
-    font-family:"Allura", cursive;
-    font-size: 85px;
-    text-align: center;
-    font-weight: 700;
-    display: inline;
-    letter-spacing: 15px;
-    color: ghostwhite;
-    background-color: #eab150;
-    border-radius: 50px;
-    margin-top: 150px;
-    margin-right: 20px;
+.titre img {
+    height: 290px;
+    width: 290px;
     margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
 }
+
 
 body{
     background-color: #FFF8E7;
 }
 
-.parametre {
+.onglet {
     width: 60px;
     height: 34px;
     display: flex;
@@ -36,10 +33,31 @@ body{
     padding: 15px;
     border-radius: 10px;
 }
-
-.parametre span {
+.onglet span {
     height: 3px;
     width: 100%;
     background-color: #3A1515;
     border-radius: 5px;
+
+}
+
+.slogan{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px;
+}
+.offre {
+    width: 300px;
+    height: 300px;
+    display:block;
+    margin: 0 auto;
+}
+
+.offre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
