@@ -1,6 +1,6 @@
 .header {
     display: flex; /*Aligne les éléments facilement (comme des blocs qu'on peut ranger)*/
-    background-image: url("photos/fried broast.jpg");
+    background-image: url("Photos/fried broast.jpg");
     background-size: cover;
     height: 270px;
     padding: 20px 40px;

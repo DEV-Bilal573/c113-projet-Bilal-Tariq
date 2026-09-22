@@ -6,7 +6,7 @@
 ### Concept
 - Thème choisi : … Site d'un restaurant
 - Public cible : … les étudiants, les jeunes enfants, les adults du canton de Jura
-- Objectifs du site : … Montrer les spécialités, mettre à jour les spécialités du jour, afficher les prix, les offres, les moyens de contacte, et le placement du restaurant.
+- Objectifs du site : … Montrer le menu, mettre à jour les offres, afficher les prix, les moyens de contact, et le placement du restaurant.
 
 ### Fonctionnalités prévues
 - Navigation : …
