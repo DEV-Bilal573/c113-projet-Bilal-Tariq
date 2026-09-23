@@ -9,59 +9,63 @@
 <header>
     <div class="header">
         <div class="titre">
-            <img src="Photos/logo.jpg" alt="logo"></div>
-        <label class="onglet">
+            <img src="Photos/logo.jpg" alt="logo">
+        </div>
+        <!-- Checkbox cachée qui permet d'ouvrir le menu quand on clique sur le label -->
+        <input type="checkbox" id="menuBtn">
+        <!-- Le for relie le label à la checkbox -->
+        <label class="onglet" for="menuBtn">
             <span></span>
             <span></span>
             <span></span>
+
         </label>
+
+    <nav id="menu">
+        <a href="#">Menu</a>
+        <a href="#">Galerie</a>
+        <a href="#">About us</a>
+    </nav>
+
     </div>
     <div>
         <p class="slogan"> "Here we eat just chicken"</p>
     </div>
 </header>
 <main>
-    <section>
-        <h1>
             <a href="offre.html" class="offre">
                 <img src="Photos/offre.jpg" alt="offre">
             </a>
-        </h1>
-    </section>
-    <section>
-        <h2>
+
+        <div class="autre_menu">
             <a href="burger.html" class="burger">
                 <img src="Photos/burger.jpg" alt="burger">
             </a>
             <a href="broast.html" class="broast">
-                <img src="Photos/broast.jpg" alt="burger">
+                <img src="Photos/broast.jpg" alt="broast">
             </a>
-        </h2>
-
-    </section>
-    <section>
-        <h2>
+        </div>
+        <div class="autre_menu">
             <a href="snack.html" class="snacks">
                 <img src="Photos/snack.jpg" alt="snacks">
             </a>
             <a href="drink.html" class="boisson">
                 <img src="Photos/drink.jpg" alt="boisson">
             </a>
-        </h2>
+        </div>
 
-    </section>
 </main>
 <footer>
 
-    <h3>Horaires d'ouverture : </h3>
+    <div class="entete">Horaires d'ouverture : </div>
     <p>Lundi - Vendredi : 11h00 - 20h00
     <P>Week-end : 12h00 - 00h00</p>
 
-    <h3>Contact</h3>
+    <div class="entete">Contact</div>
     <p>fried.chicks@gmail.com
     <p>+41 23 382 38 38</p>
 
-    <h3>Adresse :</h3>
+    <div class="entete">Adresse :</div>
     <p>Rue de l'Avenir 33</p>
     <p>2800 Delémont</p>
     <p>Suisse</p>
