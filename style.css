@@ -43,7 +43,8 @@ body{
 
 }
 .header {
-    position: relative;/* Permet de positionner les éléments à l'intérieur */
+    position: relative;/* Permet de positionner les éléments à l'intérieur
+     L'élément reste à sa place normale, mais on peut le déplacer légèrement avec top, left*/
 }
 
 #menu {
