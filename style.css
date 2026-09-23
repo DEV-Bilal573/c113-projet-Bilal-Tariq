@@ -63,9 +63,11 @@ body{
 }
 h2{
     display: flex;
-    margin-left: 100px;
+    margin-left: 130px;
     margin-right: 100px;
-    gap: 170px;
+    justify-content: space-between;
+    gap:150px;
+    align-items: center;
 }
 .burger{
     width: auto;
@@ -130,8 +132,8 @@ p{
 h3{
     margin:5px;
 }
-.copyright{
-    font-size:30px;
-    font-weight:bold;
+.copyright {
+    font-size: 30px;
+    font-weight: bold;
     padding-bottom: 10px;
 }
