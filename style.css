@@ -69,50 +69,19 @@ h2{
     gap:150px;
     align-items: center;
 }
-.burger{
-    width: auto;
-    height: 280px;
-    display:flex;
-}
-.burger img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-.broast{
-    width: auto;
-    height: 280px;
-    display:flex;
-}
-.broast img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.snacks{
-    width: auto;
-    height: 280px;
-    display:flex;
-    margin-top: 30px;
-}
-.snacks img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-.boisson{
-    width: auto;
-    height: 280px;
-    display:flex;
-    margin-top: 30px;
-}
-.boisson img {
+.burger, .broast, .snacks, .boisson {
     width: 280px;
     height: 280px;
+    display: flex;
+}
+
+.snacks, .boisson {
+    margin-top: 30px;
+}
+
+.burger img, .broast img, .snacks img, .boisson img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
