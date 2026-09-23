@@ -64,7 +64,7 @@ body{
 .burger{
     width: auto;
     height: 280px;
-    display:block;
+    display:flex;
 }
 .burger img {
     width: 100%;
@@ -75,7 +75,7 @@ body{
 .broast{
     width: auto;
     height: 280px;
-    display:block;
+    display:flex;
 }
 .broast img {
     width: 100%;
@@ -92,7 +92,7 @@ h2{
 .snacks{
     width: auto;
     height: 280px;
-    display:block;
+    display:flex;
     margin-top: 30px;
 }
 .snacks img {
@@ -104,7 +104,7 @@ h2{
 .boisson{
     width: auto;
     height: 280px;
-    display:block;
+    display:flex;
     margin-top: 30px;
 }
 .boisson img {
