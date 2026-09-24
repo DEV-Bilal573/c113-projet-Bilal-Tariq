@@ -1,29 +1,24 @@
 .header {
-    display: flex; /*Aligne les éléments facilement (comme des blocs qu'on peut ranger)/
-    permet de mettre les éléments d'un bloc en disposition flexible, pour pouvoir facilement les placer en ligne ou en
-    colonne.*/
-    background-image: url("Photos/fried broast.jpg");
-    background-size: contain;
-    height: 270px;
+    display: flex;
+    background-image: url("Photos/background.jpg");
+    background-size: cover;
+    height: 250px;
+    width: auto ;
     padding: 20px 40px;
-    justify-content: space-between; /*Espace les éléments : un à gauche, un à droite*/
+    justify-content: space-between;
     align-items: center;
 }
-
-.titre img {
-    height: 290px;
-    width: 290px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.logo{
+    height: 270px;
+    width: 300px;
+    padding-left:100px;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
     border-radius: 50%;
 }
-
-
-body{
-    background-color: #FFF8E7;
-}
-
 .onglet {
     width: 60px;
     height: 34px;
@@ -41,13 +36,11 @@ body{
     width: 100%;
     background-color: #3A1515;
     border-radius: 5px;
-
 }
 .header {
     position: relative;/*relative permet de définir quel bloc sert de repère pour le bloc en absolute.
      L'élément reste à sa place normale, mais on peut le déplacer légèrement avec top, left*/
 }
-
 #menu {
     display: none;/* Cache le menu au départ */
     position: absolute;/* Permet de placer le menu où on veut */
@@ -56,7 +49,6 @@ body{
     background-color: #F0E6D2;
     padding: 20px;
     line-height: 50px;
-
 }
 #menuBtn {
     display: none;
@@ -73,66 +65,84 @@ nav a {
 #menu a:hover {
     background-color: white;/* Met le fond en blanc quand la souris passe dessus */
 }
+body{
+    background-color: #FFF8E7;
+}
 .slogan{
     font-family: "Cormorant Garamond", serif;
+    background-image: url("Photos/background.jpg");
     font-size: 80px;
+    height: 100px;
+    width: auto;
     text-align: center;
     font-weight: 700;
-    margin: 20px;
+    margin: 5px;
+    color:#FFF8E7;
+}
+.offre-semaine {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .offre {
-    width: 350px;
-    height: 270px;
-    display:block;
-    margin: 0 auto;
+    width: 60%;
+    height: 90%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: space-evenly;
 }
-
 .offre img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+    object-fit: contain;
 }
 .autre_menu{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 300px;
+    width: 100%;
 }
-.burger, .broast, .snacks, .boisson {
+.burger, .broast, .pizza, .drinks {
     width: 280px;
     height: 280px;
 }
-
-.snacks, .boisson {
+.pizza, .drinks {
     margin-top: 30px;
 }
-
-.burger img, .broast img, .snacks img, .boisson img {
+.burger img, .broast img, .pizza img, .drinks img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
-footer{
+footer {
     background-color: #F0E6D2;
-    text-align: center;
-    font-size: 25px;
+    height: 280px;
+    width: 100%;
     border-radius: 30px;
-    display:block;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top:50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
 }
-p{
-    margin:7px;
+.footer-contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-.entete{
-    margin:5px;
-    font-size: 30px;
-    font-weight: bold;
+.entete {
+    margin: 7px;
+    font-size: 25px;
 }
 .copyright {
     font-size: 30px;
     font-weight: bold;
-    padding-bottom: 10px;
+}
+.entete span{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
 }
