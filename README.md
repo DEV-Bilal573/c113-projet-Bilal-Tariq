@@ -4,26 +4,28 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : … Site d'un restaurant
-- Public cible : … les étudiants, les jeunes enfants, les adults du canton de Jura
-- Objectifs du site : … Montrer le menu, mettre à jour les offres, afficher les prix, les moyens de contact, et le placement du restaurant.
-
+- Thème choisi : … Site d'un restaurant qui s'appelle "Fried Chicken"
+- Public cible : … les étudiants, les jeunes enfants, les adults.
+- Objectifs du site : … Montrer le menu, les offres, afficher les prix, les moyens de contact, et le placement du restaurant, Galerie avec les images de notre restaurant, et les questions avec leur réponse dans l'onglet à propos.
 ### Fonctionnalités prévues
-- Navigation : …
-- Sections principales : …
-- Contenus proposés : …
+- Navigation : 5 images cliquables permettant d’accéder directement aux différentes catégories du menu depuis la page d’accueil : offres, burgers, pizzas, poulet frit croustillant et boissons. Un onglet cliquable situé en haut à droite de la page d’accueil permet également d’accéder au menu complet, à la galerie et à la page « À propos ».
+- Sections principales :
+Header : contient le logo, le nom du restaurant ainsi qu’un onglet de navigation cliquable situé à droite.
+Main : contient les différentes sections du menu, avec des images des produits et leurs prix. Certaines images sont cliquables et permettent d’accéder à une autre page. La page contient également des questions accompagnées de leurs réponses.
+Footer : contient les informations pratiques du restaurant, notamment les heures d’ouverture, les coordonnées et l’adresse.
+- Contenus proposés : présentation des différentes catégories de produits, photos des plats, prix, offres spéciales, informations sur le restaurant, galerie photos, coordonnées, horaires d’ouverture et questions fréquentes avec leurs réponses.
 
 ---
 
 ## 2. 📚 Parcours d'apprentissage
 
 ### Ressources utilisées
-- Plateformes (OpenClassrooms, MDN, freeCodeCamp, etc.)
-- Vidéos / tutoriels suivis
-- Articles ou documentations consultés
+- Plateformes (Pexel et pixabay pour pouvoir trouver des images à libre de droit, Chatgpt pour pouvoir créer mon propre logo avec le nom de restaurant, cours de Css sur Youtube. )
+- Vidéos / tutoriels suivis : Cours de CSS par "Apna college" dans la langue maternale sur youtube. 
+- Articles ou documentations consultés, 
 
 ### Progression
-- Semaine 4 : …
+- Semaine 4 : Termination de la page accueil.
 - Semaine 6 : …
 - Semaine 8 : …
 - Semaine 10 : …
