@@ -68,6 +68,10 @@ nav a {
 body{
     background-color: #FFF8E7;
 }
+main{
+    height: 1100px;
+    width: auto;
+}
 .slogan{
     font-family: "Cormorant Garamond", serif;
     background-image: url("Photos/background.jpg");
@@ -142,16 +146,6 @@ footer {
     height: 280px;
     width: 100%;
     border-radius: 30px;
-    margin-top: 70px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-footer {
-    background-color: #F0E6D2;
-    height: 280px;
-    width: 100%;
-    border-radius: 30px;
-    margin-top: 70px;
     margin-bottom: 10px;
     text-align: center;
 }
