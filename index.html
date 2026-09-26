@@ -8,17 +8,17 @@
 <body>
 <header>
     <div class="header">
-        <div class="logo">
-            <img src="Photos/logo.jpg" alt="logo">
+        <div class="logo-conteneur">
+            <div class="anneau"></div>
+            <img src="Photos/logo.jpg" alt="logo" class="logo-img">
         </div>
         <!-- Checkbox qui permet d'ouvrir le menu quand on clique sur le label -->
         <input type="checkbox" id="menuBtn">
         <!-- Le for relie le label à la checkbox -->
-        <label class="onglet" for="menuBtn">
+        <label class="onglet" for="menuBtn" aria-label="Ouvrir le menu de navigation">
             <span></span>
             <span></span>
             <span></span>
-
         </label>
 
         <nav id="menu">
@@ -29,69 +29,75 @@
         </nav>
     </div>
 </header>
+
 <main>
-    <div>
-        <p class="slogan"> "Here we eat just chicken"</p>
-        </div>
+    <h1 class="slogan" lang="en">"Here we eat just chicken"</h1>
+
     <div class="offre-semaine">
-        <div class="offre">
+        <article class="offre">
             <img src="Photos/offre.jpg" alt="offre">
             <div class="zone-bouton">
                 <a href="offre.html" class="btn-voir-plus">Voir plus</a>
             </div>
-        </div>
+        </article>
     </div>
 
     <div class="autre_menu">
-        <div class="burger">
+        <article class="burger">
             <img src="Photos/burger.jpg" alt="burger">
             <div class="zone-bouton">
                 <a href="burger.html" class="btn-voir-plus">Voir plus</a>
             </div>
-        </div>
-        <div class="broast">
+        </article>
+        <article class="broast">
             <img src="Photos/broast.jpg" alt="broast">
             <div class="zone-bouton">
                 <a href="broast.html" class="btn-voir-plus">Voir plus</a>
             </div>
-        </div>
+        </article>
     </div>
+
     <div class="autre_menu">
-        <div class="pizza">
-            <img src="Photos/pizza.jpg" alt="snacks">
+        <article class="pizza">
+            <img src="Photos/pizza.jpg" alt="pizza">
             <div class="zone-bouton">
                 <a href="pizza.html" class="btn-voir-plus">Voir plus</a>
             </div>
-        </div>
-        <div class="drinks">
+        </article>
+        <article class="drinks">
             <img src="Photos/drinks.jpg" alt="drinks">
             <div class="zone-bouton">
                 <a href="drink.html" class="btn-voir-plus">Voir plus</a>
             </div>
-        </div>
+        </article>
     </div>
-
 </main>
-<footer>
 
+<footer>
     <div class="footer-contenu">
 
         <div class="entete">
-           <span> Horaires d'ouverture :</span>
-            <p>Lundi - Vendredi : 11h00 - 20h00</p>
-            <p>Week-end : 12h00 - 00h00</p>
+            <h3>Horaires d'ouverture :</h3>
+            <ul>
+                <li>Lundi - Vendredi : 11h00 - 20h00</li>
+                <li>Week-end : 12h00 - 00h00</li>
+            </ul>
         </div>
 
         <div class="entete">
-          <span>  Contact : </span>
-            <p>fried.chicks@gmail.com</p>
-            <p>+41 23 382 38 38</p>
+            <h3>Contact :</h3>
+            <ul>
+                <li><a href="mailto:fried.chicks@gmail.com">fried.chicks@gmail.com</a></li>
+                <li><a href="tel:+41233823838">+41 23 382 38 38</a></li>
+            </ul>
         </div>
 
         <div class="entete">
-           <span> Adresse : </span>
-            <p>Rue de l'Avenir 33</p>
-            <p>2800 Delémont</p>
+            <h3>Adresse :</h3>
+            <address>
+                Rue de l'Avenir 33<br>
+                2800 Delémont
+            </address>
         </div>
 
     </div>
@@ -99,5 +105,7 @@
     <p class="copyright">
         © 2026 Fried Chicks. Tous droits réservés.
     </p>
-
 </footer>
+
+</body>
+</html>
