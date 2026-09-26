@@ -1,24 +1,62 @@
+:root {
+    --couleur-fond: #FFF8E7;
+    --couleur-texte-fonce: #3A1515;
+    --couleur-fond-menu: #F0E6D2;
+    --couleur-bouton: #3B2412;
+    --couleur-texte-bouton: #FFF3DE;
+
+    --police-titre: "Cormorant Garamond", serif;
+    --police-texte: Arial, sans-serif;
+
+    --taille-carte: 280px;
+    --rayon-carte: 15px;
+    --rayon-bouton: 20px;
+}
+
 .header {
     display: flex;
     background-image: url("Photos/background.jpg");
     background-size: cover;
-    height: 250px;
-    width: auto ;
+    min-height: 250px;
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
-}
-.logo{
+    position: relative;
+    
+.logo-conteneur{
+    position: relative;
     height: 270px;
     width: 300px;
-    padding-left:100px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.logo img {
-    height: 100%;
+.anneau {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin-bottom: 5px;
+    height: 100%;
+    border: 20px solid #8B0000;
+    border-top-color: #F4B400;
     border-radius: 50%;
+    box-sizing: border-box;
+    animation: tourner 4s linear infinite;
 }
+.logo-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+@keyframes tourner {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .onglet {
     width: 60px;
     height: 34px;
@@ -26,7 +64,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 25px;
-    background-color: #FFF8E7;
+    background-color: var(--couleur-fond);
     padding: 15px;
     border-radius: 10px;
     align-self: start;
@@ -34,27 +72,23 @@
 .onglet span {
     height: 3px;
     width: 100%;
-    background-color: #3A1515;
+    background-color: var(--couleur-texte-fonce);
     border-radius: 5px;
 }
-.header {
-    position: relative;/*relative permet de définir quel bloc sert de repère pour le bloc en absolute.
-     L'élément reste à sa place normale, mais on peut le déplacer légèrement avec top, left*/
-}
 #menu {
-    display: none;/* Cache le menu au départ */
-    position: absolute;/* Permet de placer le menu où on veut */
+    display: none;
+    position: absolute;
     right: 160px;
     bottom : 5px;
-    background-color: #F0E6D2;
+    background-color: var(--couleur-fond-menu);
     padding: 20px;
     line-height: 50px;
 }
 #menuBtn {
     display: none;
 }
-#menuBtn:checked ~ #menu { /* Affiche le menu quand la case est cochée */
-    display: flex;/* Active le système Flexbox pour organiser les éléments */
+#menuBtn:checked ~ #menu {
+    display: flex;
     flex-direction: column;
     font-size: 30px;
 }
@@ -63,17 +97,17 @@ nav a {
     color:black;
 }
 #menu a:hover {
-    background-color: white;/* Met le fond en blanc quand la souris passe dessus */
+    background-color: white;
 }
 body{
-    background-color: #FFF8E7;
+    background-color: var(--couleur-fond);
 }
 main{
-    height: 1100px;
+    min-height: 1100px;
     width: auto;
 }
 .slogan{
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--police-titre);
     background-image: url("Photos/background.jpg");
     font-size: 80px;
     height: 100px;
@@ -81,7 +115,7 @@ main{
     text-align: center;
     font-weight: 700;
     margin: 5px;
-    color:#FFF8E7;
+    color: var(--couleur-fond);
 }
 .offre-semaine {
     display: flex;
@@ -92,16 +126,15 @@ main{
     margin: 10px;
 }
 .offre {
-    width: 280px;
-    height:280px;
-    justify-content: space-evenly;
+    width: var(--taille-carte);
+    height: var(--taille-carte);
     position: relative;
 }
 .offre img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: var(--rayon-carte);
 }
 .autre_menu{
     display: flex;
@@ -111,8 +144,8 @@ main{
     width: 100%;
 }
 .burger, .broast, .pizza, .drinks {
-    width: 280px;
-    height: 280px;
+    width: var(--taille-carte);
+    height: var(--taille-carte);
     position: relative;
 }
 .pizza, .drinks {
@@ -122,7 +155,7 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: var(--rayon-carte);
 }
 .zone-bouton {
     position: absolute;
@@ -132,18 +165,18 @@ main{
     bottom: 1px;
 }
 .btn-voir-plus {
-    background-color: #3B2412;
-    color: #FFF3DE;
+    background-color: var(--couleur-bouton);
+    color: var(--couleur-texte-bouton);
     padding: 8px 40px;
-    border-radius: 20px;
+    border-radius: var(--rayon-bouton);
     text-decoration: underline;
-    font-family: Arial, sans-serif;
+    font-family: var(--police-texte);
     font-weight: bold;
     font-size: 27px;
 }
 footer {
-    background-color: #F0E6D2;
-    height: 400px;
+    background-color: var(--couleur-fond-menu);
+    min-height: 400px;
     width: 100%;
     border-radius: 30px;
     margin-bottom: 5px;
@@ -165,8 +198,28 @@ footer {
     font-size: 30px;
     font-weight: bold;
 }
-.entete span{
+
+.entete h3{
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline;
+    margin: 0 0 10px 0;
+}
+.entete ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.entete li {
+    margin: 4px 0;
+}
+.entete a {
+    color: black;
+    text-decoration: none;
+}
+.entete a:hover {
+    text-decoration: underline;
+}
+address {
+    font-style: normal;
 }
