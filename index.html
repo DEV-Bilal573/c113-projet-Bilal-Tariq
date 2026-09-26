@@ -2,24 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fried Chicken</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <div class="header">
-        <div class="logo-conteneur">
-            <div class="anneau"></div>
-            <img src="Photos/logo.jpg" alt="logo" class="logo-img">
+        <div class="logo">
+            <img src="Photos/logo.jpg" alt="logo">
         </div>
         <!-- Checkbox qui permet d'ouvrir le menu quand on clique sur le label -->
         <input type="checkbox" id="menuBtn">
         <!-- Le for relie le label à la checkbox -->
-        <label class="onglet" for="menuBtn" aria-label="Ouvrir le menu de navigation">
+        <label class="onglet" for="menuBtn">
             <span></span>
             <span></span>
             <span></span>
+
         </label>
 
         <nav id="menu">
@@ -30,75 +29,54 @@
         </nav>
     </div>
 </header>
-
 <main>
-    <h1 class="slogan" lang="en">"Here we eat just chicken"</h1>
-
+    <div>
+        <p class="slogan"> "Here we eat just chicken"</p>
+    </div>
     <div class="offre-semaine">
-        <article class="offre">
-            <img src="Photos/offre.jpg" alt="offre">
-            <div class="zone-bouton">
-                <a href="offre.html" class="btn-voir-plus">Voir plus</a>
-            </div>
-        </article>
+    <a href="offre.html" class="offre">
+        <img src="Photos/offre.jpg" alt="offre">
+    </a>
     </div>
 
     <div class="autre_menu">
-        <article class="burger">
+        <a href="burger.html" class="burger">
             <img src="Photos/burger.jpg" alt="burger">
-            <div class="zone-bouton">
-                <a href="burger.html" class="btn-voir-plus">Voir plus</a>
-            </div>
-        </article>
-        <article class="broast">
+        </a>
+        <a href="broast.html" class="broast">
             <img src="Photos/broast.jpg" alt="broast">
-            <div class="zone-bouton">
-                <a href="broast.html" class="btn-voir-plus">Voir plus</a>
-            </div>
-        </article>
+        </a>
     </div>
-
     <div class="autre_menu">
-        <article class="pizza">
-            <img src="Photos/pizza.jpg" alt="pizza">
-            <div class="zone-bouton">
-                <a href="pizza.html" class="btn-voir-plus">Voir plus</a>
-            </div>
-        </article>
-        <article class="drinks">
+        <a href="pizza.html" class="pizza">
+            <img src="Photos/pizza.jpg" alt="snacks">
+        </a>
+        <a href="drink.html" class="drinks">
             <img src="Photos/drinks.jpg" alt="drinks">
-            <div class="zone-bouton">
-                <a href="drink.html" class="btn-voir-plus">Voir plus</a>
-            </div>
-        </article>
+        </a>
     </div>
-</main>
 
+</main>
 <footer>
+
     <div class="footer-contenu">
 
         <div class="entete">
-            <h3>Horaires d'ouverture :</h3>
-            <ul>
-                <li>Lundi - Vendredi : 11h00 - 20h00</li>
-                <li>Week-end : 12h00 - 00h00</li>
-            </ul>
+           <span> Horaires d'ouverture :</span>
+            <p>Lundi - Vendredi : 11h00 - 20h00</p>
+            <p>Week-end : 12h00 - 00h00</p>
         </div>
 
         <div class="entete">
-            <h3>Contact :</h3>
-            <ul>
-                <li><a href="mailto:fried.chicks@gmail.com">fried.chicks@gmail.com</a></li>
-                <li><a href="tel:+41233823838">+41 23 382 38 38</a></li>
-            </ul>
+          <span>  Contact : </span>
+            <p>fried.chicks@gmail.com</p>
+            <p>+41 23 382 38 38</p>
         </div>
 
         <div class="entete">
-            <h3>Adresse :</h3>
-            <address>
-                Rue de l'Avenir 33<br>
-                2800 Delémont
-            </address>
+           <span> Adresse : </span>
+            <p>Rue de l'Avenir 33</p>
+            <p>2800 Delémont</p>
         </div>
 
     </div>
@@ -106,7 +84,5 @@
     <p class="copyright">
         © 2026 Fried Chicks. Tous droits réservés.
     </p>
-</footer>
 
-</body>
-</html>
+</footer>
