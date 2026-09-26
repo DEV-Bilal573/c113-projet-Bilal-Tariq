@@ -1,62 +1,24 @@
-:root {
-    --couleur-fond: #FFF8E7;
-    --couleur-texte-fonce: #3A1515;
-    --couleur-fond-menu: #F0E6D2;
-    --couleur-bouton: #3B2412;
-    --couleur-texte-bouton: #FFF3DE;
-
-    --police-titre: "Cormorant Garamond", serif;
-    --police-texte: Arial, sans-serif;
-
-    --taille-carte: 280px;
-    --rayon-carte: 15px;
-    --rayon-bouton: 20px;
-}
-
 .header {
     display: flex;
     background-image: url("Photos/background.jpg");
     background-size: cover;
-    min-height: 250px;
+    height: 250px;
+    width: auto ;
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    
-.logo-conteneur{
-    position: relative;
+}
+.logo{
     height: 270px;
     width: 300px;
-    margin-left: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left:100px;
 }
-.anneau {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.logo img {
     height: 100%;
-    border: 20px solid #8B0000;
-    border-top-color: #F4B400;
+    width: 100%;
+    margin-bottom: 5px;
     border-radius: 50%;
-    box-sizing: border-box;
-    animation: tourner 4s linear infinite;
 }
-.logo-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-}
-@keyframes tourner {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 .onglet {
     width: 60px;
     height: 34px;
@@ -64,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 25px;
-    background-color: var(--couleur-fond);
+    background-color: #FFF8E7;
     padding: 15px;
     border-radius: 10px;
     align-self: start;
@@ -72,23 +34,27 @@
 .onglet span {
     height: 3px;
     width: 100%;
-    background-color: var(--couleur-texte-fonce);
+    background-color: #3A1515;
     border-radius: 5px;
 }
+.header {
+    position: relative;/*relative permet de définir quel bloc sert de repère pour le bloc en absolute.
+     L'élément reste à sa place normale, mais on peut le déplacer légèrement avec top, left*/
+}
 #menu {
-    display: none;
-    position: absolute;
+    display: none;/* Cache le menu au départ */
+    position: absolute;/* Permet de placer le menu où on veut */
     right: 160px;
     bottom : 5px;
-    background-color: var(--couleur-fond-menu);
+    background-color: #F0E6D2;
     padding: 20px;
     line-height: 50px;
 }
 #menuBtn {
     display: none;
 }
-#menuBtn:checked ~ #menu {
-    display: flex;
+#menuBtn:checked ~ #menu { /* Affiche le menu quand la case est cochée */
+    display: flex;/* Active le système Flexbox pour organiser les éléments */
     flex-direction: column;
     font-size: 30px;
 }
@@ -97,17 +63,13 @@ nav a {
     color:black;
 }
 #menu a:hover {
-    background-color: white;
+    background-color: white;/* Met le fond en blanc quand la souris passe dessus */
 }
 body{
-    background-color: var(--couleur-fond);
-}
-main{
-    min-height: 1100px;
-    width: auto;
+    background-color: #FFF8E7;
 }
 .slogan{
-    font-family: var(--police-titre);
+    font-family: "Cormorant Garamond", serif;
     background-image: url("Photos/background.jpg");
     font-size: 80px;
     height: 100px;
@@ -115,26 +77,26 @@ main{
     text-align: center;
     font-weight: 700;
     margin: 5px;
-    color: var(--couleur-fond);
+    color:#FFF8E7;
 }
 .offre-semaine {
     display: flex;
     align-items: center;
     height: 300px;
-    width: auto;
+    width: 100%;
     justify-content: space-evenly;
-    margin: 10px;
 }
 .offre {
-    width: var(--taille-carte);
-    height: var(--taille-carte);
-    position: relative;
+    width: 60%;
+    height: 90%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: space-evenly;
 }
 .offre img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: var(--rayon-carte);
+    object-fit: contain;
 }
 .autre_menu{
     display: flex;
@@ -144,51 +106,32 @@ main{
     width: 100%;
 }
 .burger, .broast, .pizza, .drinks {
-    width: var(--taille-carte);
-    height: var(--taille-carte);
-    position: relative;
+    width: 280px;
+    height: 280px;
 }
 .pizza, .drinks {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .burger img, .broast img, .pizza img, .drinks img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--rayon-carte);
-}
-.zone-bouton {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 1px;
-}
-.btn-voir-plus {
-    background-color: var(--couleur-bouton);
-    color: var(--couleur-texte-bouton);
-    padding: 8px 40px;
-    border-radius: var(--rayon-bouton);
-    text-decoration: underline;
-    font-family: var(--police-texte);
-    font-weight: bold;
-    font-size: 27px;
+    border-radius: 15px;
 }
 footer {
-    background-color: var(--couleur-fond-menu);
-    min-height: 400px;
+    background-color: #F0E6D2;
+    height: 280px;
     width: 100%;
     border-radius: 30px;
-    margin-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .footer-contenu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 .entete {
     margin: 7px;
@@ -198,164 +141,8 @@ footer {
     font-size: 30px;
     font-weight: bold;
 }
-
-.entete h3{
+.entete span{
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline;
-    margin: 0 0 10px 0;
-}
-.entete ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.entete li {
-    margin: 4px 0;
-}
-.entete a {
-    color: black;
-    text-decoration: none;
-}
-.entete a:hover {
-    text-decoration: underline;
-}
-address {
-    font-style: normal;
-}
-    @media (max-width: 600px) {
-
-    * {
-        box-sizing: border-box;
-    }
-
-    html, body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    /* HEADER */
-    .header {
-        min-height: 180px;
-        padding: 10px 15px;
-    }
-
-    /* LOGO */
-    .logo-conteneur {
-        width: 150px;
-        height: 150px;
-        margin-left: 0;
-    }
-
-    .logo-img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .anneau {
-        border-width: 10px;
-    }
-
-    /* MENU */
-    .onglet {
-        width: 45px;
-        height: 30px;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    #menu {
-        right: 10px;
-        bottom: 10px;
-        padding: 10px;
-        z-index: 10;
-    }
-
-    #menuBtn:checked ~ #menu {
-        font-size: 20px;
-    }
-
-    /* SLOGAN */
-    .slogan {
-        font-size: 35px;
-        height: auto;
-        min-height: 70px;
-        padding: 10px;
-        margin: 0;
-        line-height: 1.1;
-    }
-
-    /* CONTENU */
-    main {
-        width: 100%;
-        min-height: auto;
-    }
-
-    /* OFFRE */
-    .offre-semaine {
-        height: auto;
-        margin: 25px 10px;
-    }
-
-    .offre {
-        width: 90%;
-        max-width: 280px;
-        height: auto;
-        aspect-ratio: 1 / 1;
-    }
-
-    /* CARTES */
-    .autre_menu {
-        flex-direction: column;
-        height: auto;
-        gap: 30px;
-        margin: 30px 0;
-    }
-
-    .burger,
-    .broast,
-    .pizza,
-    .drinks {
-        width: 90%;
-        max-width: 280px;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        margin-top: 0;
-    }
-
-    /* BOUTONS */
-    .btn-voir-plus {
-        padding: 7px 25px;
-        font-size: 18px;
-    }
-
-    /* FOOTER */
-    footer {
-        min-height: auto;
-        margin: 0;
-        padding: 30px 15px;
-        border-radius: 20px 20px 0 0;
-    }
-
-    .footer-contenu {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        padding: 0;
-    }
-
-    .entete {
-        font-size: 17px;
-        text-align: center;
-    }
-
-    .entete h3 {
-        font-size: 22px;
-    }
-
-    .copyright {
-        font-size: 16px;
-    }
 }
