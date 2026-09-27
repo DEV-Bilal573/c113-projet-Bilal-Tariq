@@ -2,24 +2,17 @@
     --couleur-1: #FFF8E7;
     --couleur-2: #F0E6D2;
     --couleur-3: #3B2412;
-
-    --police-titre: "Cormorant Garamond", serif;
-    --police-texte: Arial, sans-serif;
-
-    --taille-carte: 280px;
-    --rayon-carte: 15px;
-    --rayon-bouton: 20px;
 }
 
 .header {
     display: flex;
     background-image: url("Photos/background.jpg");
     background-size: cover;
-    min-height: 250px;
+    height: 250px;
+    width: auto ;
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 .logo{
     height: 270px;
@@ -50,6 +43,9 @@
     background-color: var(--couleur-3);
     border-radius: 5px;
 }
+.header {
+    position: relative;
+}
 #menu {
     display: none;
     position: absolute;
@@ -76,14 +72,13 @@ nav a {
 }
 body{
     background-color: var(--couleur-1);
-    color: var(--couleur-3);
 }
 main{
-    min-height: 1100px;
+    height: 1100px;
     width: auto;
 }
 .slogan{
-    font-family: var(--police-titre);
+    font-family: "Cormorant Garamond", serif;
     background-image: url("Photos/background.jpg");
     font-size: 80px;
     height: 100px;
@@ -92,30 +87,6 @@ main{
     font-weight: 700;
     margin: 5px;
     color: var(--couleur-1);
-}
-h2 {
-    font-family: var(--police-titre);
-    color: var(--couleur-3);
-    text-align: center;
-    font-size: 36px;
-    margin: 20px 0 10px 0;
-}
-.presentation {
-    font-family: var(--police-texte);
-    color: var(--couleur-3);
-    text-align: center;
-    font-size: 18px;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    line-height: 1.6;
-}
-.presentation a {
-    color: var(--couleur-3);
-    font-weight: bold;
-    text-decoration: underline;
-}
-.presentation a:hover {
-    text-decoration: none;
 }
 .offre-semaine {
     display: flex;
@@ -126,15 +97,16 @@ h2 {
     margin: 10px;
 }
 .offre {
-    width: var(--taille-carte);
-    height: var(--taille-carte);
+    width: 280px;
+    height:280px;
+    justify-content: space-evenly;
     position: relative;
 }
 .offre img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--rayon-carte);
+    border-radius: 15px;
 }
 .autre_menu{
     display: flex;
@@ -144,8 +116,8 @@ h2 {
     width: 100%;
 }
 .burger, .broast, .pizza, .drinks {
-    width: var(--taille-carte);
-    height: var(--taille-carte);
+    width: 280px;
+    height: 280px;
     position: relative;
 }
 .pizza, .drinks {
@@ -155,7 +127,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--rayon-carte);
+    border-radius: 15px;
 }
 .zone-bouton {
     position: absolute;
@@ -168,15 +140,15 @@ h2 {
     background-color: var(--couleur-3);
     color: var(--couleur-2);
     padding: 8px 40px;
-    border-radius: var(--rayon-bouton);
+    border-radius: 20px;
     text-decoration: underline;
-    font-family: var(--police-texte);
+    font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 27px;
 }
 footer {
     background-color: var(--couleur-2);
-    min-height: 400px;
+    height: 400px;
     width: 100%;
     border-radius: 30px;
     margin-bottom: 5px;
@@ -199,99 +171,8 @@ footer {
     font-weight: bold;
 }
 .entete h3{
-    color: var(--couleur-3);
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline;
-    margin: 0 0 10px 0;
-}
-.entete ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.entete li {
-    margin: 4px 0;
-}
-.entete a {
     color: var(--couleur-3);
-    text-decoration: none;
-}
-.entete a:hover {
-    text-decoration: underline;
-}
-address {
-    color: var(--couleur-3);
-    font-style: normal;
-}
-
-/* ===== MEDIA QUERY : écrans étroits (mobile) ===== */
-@media (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        min-height: auto;
-        padding: 15px;
-        gap: 10px;
-    }
-    .logo {
-        height: 120px;
-        width: 120px;
-        padding-left: 0;
-    }
-    .onglet {
-        margin: 5px;
-        align-self: center;
-    }
-    #menu {
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .slogan {
-        font-size: 32px;
-        height: auto;
-        padding: 20px 10px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    .presentation {
-        font-size: 15px;
-        padding: 0 15px;
-    }
-    .offre-semaine, .autre_menu {
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-    }
-    .offre, .burger, .broast, .pizza, .drinks {
-        width: 90%;
-        max-width: 320px;
-        height: 220px;
-        margin: 0 auto;
-    }
-    .pizza, .drinks {
-        margin-top: 0;
-    }
-    .btn-voir-plus {
-        font-size: 18px;
-        padding: 6px 25px;
-    }
-    footer {
-        border-radius: 15px;
-    }
-    .footer-contenu {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .entete {
-        font-size: 18px;
-    }
-    .entete h3 {
-        font-size: 20px;
-    }
-    .copyright {
-        font-size: 18px;
-    }
 }
