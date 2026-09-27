@@ -1,12 +1,25 @@
+:root {
+    --couleur-1: #FFF8E7;
+    --couleur-2: #F0E6D2;
+    --couleur-3: #3B2412;
+
+    --police-titre: "Cormorant Garamond", serif;
+    --police-texte: Arial, sans-serif;
+
+    --taille-carte: 280px;
+    --rayon-carte: 15px;
+    --rayon-bouton: 20px;
+}
+
 .header {
     display: flex;
     background-image: url("Photos/background.jpg");
     background-size: cover;
-    height: 250px;
-    width: auto ;
+    min-height: 250px;
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .logo{
     height: 270px;
@@ -26,7 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 25px;
-    background-color: #FFF8E7;
+    background-color: var(--couleur-1);
     padding: 15px;
     border-radius: 10px;
     align-self: start;
@@ -34,46 +47,43 @@
 .onglet span {
     height: 3px;
     width: 100%;
-    background-color: #3A1515;
+    background-color: var(--couleur-3);
     border-radius: 5px;
 }
-.header {
-    position: relative;/*relative permet de définir quel bloc sert de repère pour le bloc en absolute.
-     L'élément reste à sa place normale, mais on peut le déplacer légèrement avec top, left*/
-}
 #menu {
-    display: none;/* Cache le menu au départ */
-    position: absolute;/* Permet de placer le menu où on veut */
+    display: none;
+    position: absolute;
     right: 160px;
     bottom : 5px;
-    background-color: #F0E6D2;
+    background-color: var(--couleur-2);
     padding: 20px;
     line-height: 50px;
 }
 #menuBtn {
     display: none;
 }
-#menuBtn:checked ~ #menu { /* Affiche le menu quand la case est cochée */
-    display: flex;/* Active le système Flexbox pour organiser les éléments */
+#menuBtn:checked ~ #menu {
+    display: flex;
     flex-direction: column;
     font-size: 30px;
 }
 nav a {
     text-decoration: none;
-    color:black;
+    color: var(--couleur-3);
 }
 #menu a:hover {
-    background-color: white;/* Met le fond en blanc quand la souris passe dessus */
+    background-color: white;
 }
 body{
-    background-color: #FFF8E7;
+    background-color: var(--couleur-1);
+    color: var(--couleur-3);
 }
 main{
-    height: 1100px;
+    min-height: 1100px;
     width: auto;
 }
 .slogan{
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--police-titre);
     background-image: url("Photos/background.jpg");
     font-size: 80px;
     height: 100px;
@@ -81,7 +91,31 @@ main{
     text-align: center;
     font-weight: 700;
     margin: 5px;
-    color:#FFF8E7;
+    color: var(--couleur-1);
+}
+h2 {
+    font-family: var(--police-titre);
+    color: var(--couleur-3);
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0 10px 0;
+}
+.presentation {
+    font-family: var(--police-texte);
+    color: var(--couleur-3);
+    text-align: center;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+.presentation a {
+    color: var(--couleur-3);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.presentation a:hover {
+    text-decoration: none;
 }
 .offre-semaine {
     display: flex;
@@ -92,16 +126,15 @@ main{
     margin: 10px;
 }
 .offre {
-    width: 280px;
-    height:280px;
-    justify-content: space-evenly;
+    width: var(--taille-carte);
+    height: var(--taille-carte);
     position: relative;
 }
 .offre img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: var(--rayon-carte);
 }
 .autre_menu{
     display: flex;
@@ -111,8 +144,8 @@ main{
     width: 100%;
 }
 .burger, .broast, .pizza, .drinks {
-    width: 280px;
-    height: 280px;
+    width: var(--taille-carte);
+    height: var(--taille-carte);
     position: relative;
 }
 .pizza, .drinks {
@@ -122,7 +155,7 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: var(--rayon-carte);
 }
 .zone-bouton {
     position: absolute;
@@ -132,18 +165,18 @@ main{
     bottom: 1px;
 }
 .btn-voir-plus {
-    background-color: #3B2412;
-    color: #FFF3DE;
+    background-color: var(--couleur-3);
+    color: var(--couleur-2);
     padding: 8px 40px;
-    border-radius: 20px;
+    border-radius: var(--rayon-bouton);
     text-decoration: underline;
-    font-family: Arial, sans-serif;
+    font-family: var(--police-texte);
     font-weight: bold;
     font-size: 27px;
 }
 footer {
-    background-color: #F0E6D2;
-    height: 400px;
+    background-color: var(--couleur-2);
+    min-height: 400px;
     width: 100%;
     border-radius: 30px;
     margin-bottom: 5px;
@@ -165,8 +198,100 @@ footer {
     font-size: 30px;
     font-weight: bold;
 }
-.entete span{
+.entete h3{
+    color: var(--couleur-3);
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline;
+    margin: 0 0 10px 0;
+}
+.entete ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.entete li {
+    margin: 4px 0;
+}
+.entete a {
+    color: var(--couleur-3);
+    text-decoration: none;
+}
+.entete a:hover {
+    text-decoration: underline;
+}
+address {
+    color: var(--couleur-3);
+    font-style: normal;
+}
+
+/* ===== MEDIA QUERY : écrans étroits (mobile) ===== */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        min-height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+    .logo {
+        height: 120px;
+        width: 120px;
+        padding-left: 0;
+    }
+    .onglet {
+        margin: 5px;
+        align-self: center;
+    }
+    #menu {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slogan {
+        font-size: 32px;
+        height: auto;
+        padding: 20px 10px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .presentation {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+    .offre-semaine, .autre_menu {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .offre, .burger, .broast, .pizza, .drinks {
+        width: 90%;
+        max-width: 320px;
+        height: 220px;
+        margin: 0 auto;
+    }
+    .pizza, .drinks {
+        margin-top: 0;
+    }
+    .btn-voir-plus {
+        font-size: 18px;
+        padding: 6px 25px;
+    }
+    footer {
+        border-radius: 15px;
+    }
+    .footer-contenu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .entete {
+        font-size: 18px;
+    }
+    .entete h3 {
+        font-size: 20px;
+    }
+    .copyright {
+        font-size: 18px;
+    }
 }
