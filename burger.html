@@ -3,8 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="Photos/logo.jpg" alt="logo">
+        </div>
+        <!-- Checkbox qui permet d'ouvrir le menu quand on clique sur le label -->
+        <input type="checkbox" id="menuBtn">
+        <!-- Le for relie le label à la checkbox -->
+        <label class="onglet" for="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
 
+        </label>
+
+        <nav id="menu">
+            <a href="index.html">Accueil</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="propos.html">À propos</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <h1 class="titre-burger">
+        Découvrez nos meilleurs burgers 🍔
+    </h1>
+    <h2>Des produits de qualité, issus de notre région</h2>
+    <p class="presentation">
+        Nous privilégions des viandes provenant de producteurs et fournisseurs de la région, pour vous garantir la fraîcheur, et de la qualité.
+    </p>
+    <div class="ligne1">
+    <article class="vegan-burger">
+        <img src="Photos/plantedburger.jpg" alt="planted-burger">
+        <div class="prix">CHF&nbsp8,90</div>
+        <div class="texte1">
+             <strong>Planted Chicken Burger&nbsp:&nbsp</strong>Pain moelleux, planted poulet, fromage fondant, salade verte fraîche
+        </div>
+    </article>
+    <article class="tower-burger">
+        <img src="Photos/chickentower.jpg" alt="tower-burger">
+        <div class="prix">CHF&nbsp12,90</div>
+        <div class="texte2">
+            <strong>Tower zinger Burger&nbsp:&nbsp</strong>Pain moelleux, deux portions de poulet, fromage fondant, salade verte fraîche
+        </div>
+    </article>
+    </div>
+    <div class="ligne2">
+    <article class="spicy-burger">
+        <img src="Photos/spicy-burger.jpg" alt="spicy-burger">
+        <div class="prix">CHF&nbsp10,90</div>
+        <div class="texte3">
+            <strong>Spicy Injected Burger&nbsp:&nbsp</strong>Pain moelleux, poulet mariné aux piments, fromage fondant, salade verte fraîche
+        </div>
+    </article>
+    <article class="zinger-burger">
+        <img src="Photos/single-zingerburger.jpg" alt="single-zinger-burger">
+        <div class="prix">CHF&nbsp7,90</div>
+        <div class="texte4">
+            <strong>Single zinger Burger&nbsp:&nbsp</strong>Pain moelleux, portions de poulet, fromage fondant, salade verte fraîche
+        </div>
+    </article>
+    </div>
+
+</main>
+<footer>
+
+    <div class="footer-contenu">
+
+        <div class="entete">
+            <h3>Horaires d'ouverture :</h3>
+            <ul>
+                <li>Lundi-Vendredi : 11h00 - 20h00</li>
+                <li>Week-end : 12h00 - 00h00</li>
+            </ul>
+        </div>
+
+        <div class="entete">
+            <h3>Contact :</h3>
+            <ul>
+                <li><a href="mailto:fried.chicks@gmail.com">fried.chicks@gmail.com</a></li>
+                <li><a href="tel:+41233823838">+41 23 382 38 38</a></li>
+            </ul>
+        </div>
+
+        <div class="entete">
+            <h3>Adresse :</h3>
+            <ul>
+                <li> Rue de l'Avenir 33</li>
+                <li> 2800 Delémont</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Fried Chicks. Tous droits réservés.
+    </p>
+
+</footer>
 </body>
 </html>
