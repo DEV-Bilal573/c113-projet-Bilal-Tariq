@@ -17,8 +17,8 @@
     --couleur-2: #F0E6D2;
     --couleur-3: #3B2412;
 
-    --police-titre: "Cormorant Garamond", serif;
-    --police-texte: Arial, sans-serif;
+    --police-titre: "Cormorant Garamond";
+    --police-texte: Arial;
 
     --taille-carte: 280px;
     --rayon-carte: 15px;
@@ -109,7 +109,7 @@ main {
 }
 
 .slogan {
-    font-family: var(--police-titre);
+    font-family: var(--police-titre),serif;
     background-image: url("Photos/background.jpg");
     font-size: 80px;
     height: 100px;
@@ -122,7 +122,7 @@ main {
 }
 
 h2 {
-    font-family: var(--police-titre);
+    font-family: var(--police-titre),serif;
     color: var(--couleur-3);
     text-align: center;
     font-size: 50px;
@@ -130,7 +130,7 @@ h2 {
 }
 
 .presentation {
-    font-family: var(--police-texte);
+    font-family: var(--police-texte), sans-serif;
     color: var(--couleur-3);
     text-align: center;
     font-size: 30px;
@@ -207,7 +207,7 @@ h2 {
     padding: 8px 40px;
     border-radius: var(--rayon-bouton);
     text-decoration: underline;
-    font-family: var(--police-texte);
+    font-family: var(--police-texte),sans-serif;
     font-weight: bold;
     font-size: 27px;
 }
@@ -217,6 +217,7 @@ footer {
     height: 270px;
     width: 100%;
     border-radius: 30px;
+    margin-top: 10px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -247,7 +248,7 @@ footer {
 
 .entete h3 {
     color: var(--couleur-3);
-    font-family: var(--police-titre);
+    font-family: var(--police-titre),serif;
     font-size: 35px;
     font-weight: bold;
     text-decoration: underline;
