@@ -232,7 +232,7 @@ footer {
 
 .entete {
     margin: 7px;
-    font-size: 25px;
+    font-size: 22px;
     font-family: var(--police-texte),sans-serif;
 }
 
@@ -247,7 +247,8 @@ footer {
 
 .entete h3 {
     color: var(--couleur-3);
-    font-size: 30px;
+    font-family: var(--police-titre);
+    font-size: 35px;
     font-weight: bold;
     text-decoration: underline;
     margin: 0 0 10px 0;
@@ -255,6 +256,7 @@ footer {
 
 .entete ul {
     list-style: none;
+    padding:0;
 }
 
 .entete li {
@@ -268,11 +270,4 @@ footer {
 
 .entete a:hover {
     text-decoration: underline;
-}
-
-address {
-    font-family: var(--police-texte),sans-serif;
-    padding-top: 10px;
-    color: var(--couleur-3);
-    font-style: normal;
 }
