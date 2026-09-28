@@ -199,7 +199,7 @@ h2 {
 
 footer {
     background-color: var(--couleur-2);
-    height: 250px;
+    height: 270px;
     width: 100%;
     border-radius: 30px;
     margin-bottom: 5px;
@@ -224,8 +224,9 @@ footer {
 .copyright {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0px;
 }
 
 .entete h3 {
