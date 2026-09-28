@@ -104,6 +104,7 @@ main {
     font-weight: 700;
     margin: 5px;
     color: var(--couleur-1);
+    border-radius: 30px;
 }
 
 h2 {
@@ -128,11 +129,11 @@ h2 {
 .presentation a {
     color: var(--couleur-3);
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .presentation a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .offre-semaine {
@@ -203,7 +204,6 @@ footer {
     width: 100%;
     border-radius: 30px;
     margin-bottom: 5px;
-    margin-top: 30px;
     text-align: center;
 }
 
@@ -211,7 +211,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -224,9 +223,9 @@ footer {
 .copyright {
     font-size: 30px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    margin:0px;
+    margin:0;
 }
 
 .entete h3 {
