@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("fonts/CormorantGaramond-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("fonts/CormorantGaramond-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --couleur-1: #FFF8E7;
     --couleur-2: #F0E6D2;
@@ -116,7 +130,7 @@ h2 {
 }
 
 .presentation {
-    font-family: var(--police-titre);
+    font-family: var(--police-texte);
     color: var(--couleur-3);
     text-align: center;
     font-size: 30px;
@@ -129,11 +143,11 @@ h2 {
 .presentation a {
     color: var(--couleur-3);
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .presentation a:hover {
-    text-decoration: underline;
+    background-color: white;
 }
 
 .offre-semaine {
@@ -211,17 +225,20 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 20px;
+    align-content: center;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .entete {
     margin: 7px;
     font-size: 25px;
+    font-family: var(--police-texte),sans-serif;
 }
 
 .copyright {
-    font-size: 30px;
+    font-family: var(--police-titre),serif;
+    font-size: 40px;
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -254,6 +271,8 @@ footer {
 }
 
 address {
+    font-family: var(--police-texte),sans-serif;
+    padding-top: 10px;
     color: var(--couleur-3);
     font-style: normal;
 }
