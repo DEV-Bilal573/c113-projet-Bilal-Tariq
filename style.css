@@ -61,6 +61,7 @@
     padding: 15px;
     border-radius: 10px;
     align-self: start;
+    border: 5px solid var(--couleur-3);
 }
 
 .onglet span {
@@ -167,10 +168,11 @@ h2 {
 }
 
 .offre img {
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 97%;
     object-fit: cover;
     border-radius: var(--rayon-carte);
+    border: 5px solid var(--couleur-3);
 }
 
 .autre_menu {
@@ -189,10 +191,11 @@ h2 {
 }
 
 .burger img, .broast img, .pizza img, .drinks img {
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 97%;
     object-fit: cover;
     border-radius: var(--rayon-carte);
+    border: 5px solid var(--couleur-3);
 }
 
 .zone-bouton {
