@@ -273,8 +273,8 @@ footer {
 .entete a:hover {
     text-decoration: underline;
 }
-/*page burger-html*/
-.titre-burger{
+
+.titre-menu{
     font-family: var(--police-titre),serif;
     font-weight: bold;
     font-size: 50px;
@@ -285,35 +285,36 @@ footer {
     background-color: var(--couleur-3);
     border-radius: 20px;
 }
-.ligne1, .ligne1\.1 {
+.ligne1, .ligne1\.1, .ligne1\.2 {
     display: flex;
     height:450px;
     width: auto;
     justify-content: space-evenly;
     margin: 20px 0;
 }
-.ligne2, .ligne2\.1 {
+.ligne2, .ligne2\.1, .ligne2\.2 {
     display: flex;
     height: 450px;
     width: auto;
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
-.vegan-burger, .tower-burger,.nuggets, .Chicken-Broast{
+.vegan-burger, .tower-burger,.nuggets, .Chicken-Broast,.chicken-fajita-pizza, .chicken-mexicaine-pizza{
     display: flex;
     height:450px;
     width:400px;
     align-content: center;
     position: relative;
 }
-.vegan-burger img, .tower-burger img, .nuggets img, .Chicken-Broast img {
+.vegan-burger img, .tower-burger img, .nuggets img, .Chicken-Broast img, .chicken-fajita-pizza img,
+.chicken-mexicaine-pizza img{
     width: 380px;
     height: 360px;
     object-fit: cover;
     border: 10px solid var(--couleur-3);
 }
 
-.texte1,.texte2, .texte1\.1, .texte2\.1 {
+.texte1,.texte2, .texte1\.1, .texte2\.1,.texte1\.2, .texte2\.2{
     height: 70px;
     position: absolute;
     bottom: 0;
@@ -326,21 +327,21 @@ footer {
     margin: 0;
     border: 10px solid var(--couleur-3);
 }
-.spicy-burger, .zinger-burger,.Injected-Broast, .Wings{
+.spicy-burger, .zinger-burger,.Injected-Broast, .Wings, .chicken-spicy-Pizza, .chicken-tikka-pizza{
     display: flex;
     height:450px;
     width:400px;
     align-content: center;
     position: relative;
 }
-.spicy-burger img, .zinger-burger img, .Injected-Broast img, .Wings img {
+.spicy-burger img, .zinger-burger img, .Injected-Broast img, .Wings img, .chicken-spicy-Pizza img,.chicken-tikka-pizza img {
     width: 380px;
     height: 360px;
     object-fit: cover;
     border: 10px solid var(--couleur-3);
 }
 
-.texte3,.texte4, .texte3\.1, .texte4\.1  {
+.texte3,.texte4, .texte3\.1, .texte4\.1, .texte3\.2, .texte4\.2 {
     height: 70px;
     position: absolute;
     bottom: 0;
@@ -368,4 +369,10 @@ footer {
     border: 1px solid var(--couleur-3);
     align-items: center;
     text-align: center;
+}
+.texte1\.2, .texte2\.2 {
+    font-size: 18px;
+}
+.texte3\.2, .texte4\.2 {
+    font-size: 17px;
 }
