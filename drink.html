@@ -2,9 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fried-Chicken</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="Photos/logo.jpg" alt="logo">
+        </div>
+        <!-- Checkbox qui permet d'ouvrir le menu quand on clique sur le label -->
+        <input type="checkbox" id="menuBtn">
+        <!-- Le for relie le label à la checkbox -->
+        <label class="onglet" for="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
 
+        </label>
+
+        <nav id="menu">
+            <a href="index.html">Accueil</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="propos.html">À propos</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <h1 class="titre-menu">
+        Découvrez nos boissons rafraîchissantes 🥤🍹
+    </h1>
+    <h2>Des boissons pour tous les goûts 🥤</h2>
+    <p class="presentation">
+        Nous vous proposons une sélection de boissons fraîches et rafraîchissantes, allant des sodas et jus de fruits aux eaux et thés froids, pour accompagner parfaitement votre repas.
+    </p>
+    <div class="ligne1.3">
+        <article class="boisson-sucree">
+            <img src="Photos/boisson-sucree.jpg" alt="boisson-sucree">
+            <div class="prix">CHF&nbsp2,50</div>
+            <div class="texte1.3">
+                <strong>Boissons Sucrées : </strong>Coca-Cola, Sprite et Fanta, servis bien frais pour accompagner votre repas.
+            </div>
+            </article>
+
+        <article class="autre-boisson">
+            <img src="Photos/AutreBoisson.jpg" alt="autre-boisson">
+            <div class="prix">CHF&nbsp3,00</div>
+            <div class="texte2.3">
+                <strong>Boissons fraîches : </strong>Jus de fruits, boisson énergétique et thé froid, servis bien frais pour accompagner votre repas.
+            </div>
+        </article>
+    </div>
+    <div class="ligne2.3">
+        <article class="beer">
+            <img src="Photos/beer.jpg" alt="beer">
+            <div class="prix">CHF&nbsp4,90</div>
+            <div class="texte3.3">
+                <strong>Bières : </strong>Une sélection de bières suisses fraîches, idéales pour accompagner votre repas.
+            </div>
+        </article>
+        <article class="eau">
+            <img src="Photos/eau.jpg" alt="eau">
+            <div class="prix">CHF&nbsp1,90</div>
+            <div class="texte4.3">
+                <strong>Eaux : </strong>Eau plate, eau gazeuse et eau citronnée, fraîches et rafraîchissantes pour accompagner votre repas.
+            </div>
+        </article>
+    </div>
+
+</main>
+<footer>
+
+    <div class="footer-contenu">
+
+        <div class="entete">
+            <h3>Horaires d'ouverture :</h3>
+            <ul>
+                <li>Lundi-Vendredi : 11h00 - 20h00</li>
+                <li>Week-end : 12h00 - 00h00</li>
+            </ul>
+        </div>
+
+        <div class="entete">
+            <h3>Contact :</h3>
+            <ul>
+                <li><a href="mailto:fried.chicks@gmail.com">fried.chicks@gmail.com</a></li>
+                <li><a href="tel:+41233823838">+41 23 382 38 38</a></li>
+            </ul>
+        </div>
+
+        <div class="entete">
+            <h3>Adresse :</h3>
+            <ul>
+                <li> Rue de l'Avenir 33</li>
+                <li> 2800 Delémont</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Fried Chicks. Tous droits réservés.
+    </p>
+
+</footer>
 </body>
 </html>

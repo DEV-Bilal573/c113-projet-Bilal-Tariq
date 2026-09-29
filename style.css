@@ -289,21 +289,22 @@ footer {
     background-color: var(--couleur-3);
     border-radius: 20px;
 }
-.ligne1, .ligne1\.1, .ligne1\.2 {
+.ligne1, .ligne1\.1, .ligne1\.2, .ligne1\.3 {
     display: flex;
     height:450px;
     width: auto;
     justify-content: space-evenly;
     margin: 20px 0;
 }
-.ligne2, .ligne2\.1, .ligne2\.2 {
+.ligne2, .ligne2\.1, .ligne2\.2 , .ligne2\.3 {
     display: flex;
     height: 450px;
     width: auto;
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
-.vegan-burger, .tower-burger,.nuggets, .Chicken-Broast,.chicken-fajita-pizza, .chicken-mexicaine-pizza{
+.vegan-burger, .tower-burger,.nuggets, .Chicken-Broast,.chicken-fajita-pizza, .chicken-mexicaine-pizza,
+.boisson-sucree, .autre-boisson{
     display: flex;
     height:450px;
     width:400px;
@@ -311,14 +312,14 @@ footer {
     position: relative;
 }
 .vegan-burger img, .tower-burger img, .nuggets img, .Chicken-Broast img, .chicken-fajita-pizza img,
-.chicken-mexicaine-pizza img{
+.chicken-mexicaine-pizza img,.boisson-sucree img, .autre-boisson img{
     width: 380px;
     height: 360px;
     object-fit: cover;
     border: 10px solid var(--couleur-3);
 }
 
-.texte1,.texte2, .texte1\.1, .texte2\.1,.texte1\.2, .texte2\.2{
+.texte1,.texte2, .texte1\.1, .texte2\.1,.texte1\.2, .texte2\.2,.texte1\.3,.texte2\.3 {
     height: 70px;
     position: absolute;
     bottom: 0;
@@ -331,21 +332,23 @@ footer {
     margin: 0;
     border: 10px solid var(--couleur-3);
 }
-.spicy-burger, .zinger-burger,.Injected-Broast, .Wings, .chicken-spicy-Pizza, .chicken-tikka-pizza{
+.spicy-burger, .zinger-burger,.Injected-Broast, .Wings, .chicken-spicy-Pizza, .chicken-tikka-pizza,
+.eau,.beer{
     display: flex;
     height:450px;
     width:400px;
     align-content: center;
     position: relative;
 }
-.spicy-burger img, .zinger-burger img, .Injected-Broast img, .Wings img, .chicken-spicy-Pizza img,.chicken-tikka-pizza img {
+.spicy-burger img, .zinger-burger img, .Injected-Broast img, .Wings img, .chicken-spicy-Pizza img,
+.chicken-tikka-pizza img, .eau img, .beer img{
     width: 380px;
     height: 360px;
     object-fit: cover;
     border: 10px solid var(--couleur-3);
 }
 
-.texte3,.texte4, .texte3\.1, .texte4\.1, .texte3\.2, .texte4\.2 {
+.texte3,.texte4, .texte3\.1, .texte4\.1, .texte3\.2, .texte4\.2, .texte3\.3, .texte4\.3 {
     height: 70px;
     position: absolute;
     bottom: 0;
@@ -379,4 +382,7 @@ footer {
 }
 .texte3\.2, .texte4\.2 {
     font-size: 17px;
+}
+.ligne2\.3{
+    margin-bottom: 10px;
 }
