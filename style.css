@@ -472,8 +472,8 @@ footer {
     text-align: center;
     height:400px;
     width:500px;
-    font-family:var(--police-titre), sans-serif;
-    Font-size: 40px;
+    font-family:var(--police-texte), sans-serif;
+    Font-size: 37px;
     align-content: center;
     background-color: var(--couleur-1);
     border-radius: 30px;
