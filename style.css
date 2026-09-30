@@ -30,7 +30,7 @@
     display: flex;
     background-image: url("Photos/background.jpg");
     background-size: cover;
-    min-height: 250px;
+    height: 270px;
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
@@ -44,10 +44,12 @@
 }
 
 .logo img {
-    height: 100%;
-    width: 100%;
+    height: 240px;
+    width: 240px;
     margin-bottom: 5px;
     border-radius: 50%;
+    border: 15px solid var(--couleur-1);
+    animation: couleur 1s linear infinite, bouger 2s ease-in-out infinite;
 }
 
 .onglet {
@@ -385,4 +387,42 @@ footer {
 }
 .ligne2\.3{
     margin-bottom: 10px;
+}
+.texte2\.3{
+    font-size: 19px;
+}
+
+@keyframes couleur {
+    0% {
+        border-top-color: yellow;
+    }
+
+    25% {
+        border-right-color: red;
+    }
+
+    50% {
+        border-bottom-color: yellow;
+    }
+
+    75% {
+        border-left-color: red;
+    }
+
+    100% {
+        border-top-color: yellow;
+    }
+}
+@keyframes bouger {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
