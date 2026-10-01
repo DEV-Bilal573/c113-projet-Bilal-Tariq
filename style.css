@@ -426,7 +426,7 @@ footer {
         transform: translateX(0);
     }
 }
-.Partie1 {
+.Partie1, .Partie2 {
     height: 420px;
     width: auto;
     display: flex;
@@ -435,40 +435,51 @@ footer {
     background-color: var(--couleur-2);
     padding:20px 0;
 }
-.sous-partie{
+.Partie2{
+    margin-top: 30px;
+}
+.sous-partie1, .sous-partie2 {
     height:400px;
     width: 400px;
     display: flex;
     border: 10px solid var(--couleur-3);
     border-radius: 30px;
     position: relative;
+
 }
-.photo1{
+.photo1,.photo2{
     height:250px;
     width:400px;
     display: flex;
     position: absolute;
     bottom:0;
 }
-.photo1 img{
-    height:250px;
+.photo2{
+    height:280px;
+}
+.photo1 img, .photo2 img{
+    height:100%;
     width:100%;
     object-fit: cover;
 }
-.reduction1{
+.reduction1, .reduction2{
     position: absolute;
     height:150px;
     width:400px;
     bottom: 250px;
     display:flex;
 }
-.reduction1 img {
+.reduction2{
+    height:120px;
+    bottom: 280px;
+}
+.reduction1 img, .reduction2 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.explication1{
-    left:15px;
+.explication1, .explication2{
+    position: relative;
     text-align: center;
     height:400px;
     width:500px;
