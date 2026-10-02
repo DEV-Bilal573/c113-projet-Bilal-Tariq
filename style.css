@@ -479,14 +479,56 @@ footer {
     object-fit: cover;
 }
 .explication1, .explication2{
+    font-size:38px;
     position: relative;
     text-align: center;
     height:400px;
     width:500px;
     font-family:var(--police-texte), sans-serif;
-    Font-size: 38px;
     align-content: center;
     background-color: var(--couleur-1);
     border-radius: 30px;
     border: 10px solid var(--couleur-3);
+}
+.menu-2{
+    height:100px;
+    width:auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: var(--couleur-3);
+    border-radius: 10px;
+    border: 10px solid var(--couleur-3);
+    margin-top: 10px;
+}
+.menu-2 a{
+    height:60px;
+    width:130px;
+    border: 5px solid var(--couleur-3);
+    border-radius: 30px;
+    Font-size: 38px;
+    color: var(--couleur-3);
+    font-family: var(--police-titre),serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--couleur-2);
+}
+#Burger, #Broast, #Pizza, #Boisson {
+    scroll-margin-top: 130px;
+}
+#Boisson{
+    padding-bottom:40px;
+}
+.menu-2 a:hover {
+    text-decoration: underline;
+    background-color: var(--couleur-1);
+    transform: scale(1.1);
+}
+html {
+    scroll-behavior: smooth;
 }
