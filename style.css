@@ -169,7 +169,8 @@ h2 {
     height: 17.5rem;
     width: auto;
     justify-content: space-evenly;
-    margin: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .offre {
@@ -194,7 +195,7 @@ h2 {
     align-items: center;
     height: 17.5rem;
     width: 100%;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 .burger, .broast, .pizza, .drinks {
