@@ -585,3 +585,330 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* Si quelque chose dépasse sur le côté, on le coupe
+   pour que la page ne glisse pas vers la droite.
+ */
+html, body {
+    overflow-x: clip;
+}
+
+/* Une image ne peut jamais être plus large que sa boîte */
+img {
+    max-width: 100%;
+}
+
+
+/* =====================================================
+   VERSION TÉLÉPHONE
+   Tout ce qui est dans les accolades ne marche que
+   si l'écran fait 768px de large ou moins.
+   Sur PC, rien de tout ça ne s'applique.
+   ===================================================== */
+@media (max-width: 768px) {
+
+    /* Bandeau plus petit : 10rem au lieu de 16.875rem */
+    .header {
+        height: 10rem;
+    }
+
+    /* Logo plus petit et plus proche du bord gauche */
+    .logo {
+        height: 8rem;
+        width: 9rem;
+        left: 1rem;
+    }
+
+    /* Bordure du logo plus fine */
+    .logo img {
+        border-width: 0.4rem;
+    }
+
+    /* Boutons (les 3 traits) plus petit */
+    .onglet {
+        width: 2rem;
+        height: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    /* Menu déroulant : placé juste à gauche du bouton,
+       à la même hauteur, pour rester dans le bandeau rouge */
+    #menu {
+        right: calc(4.3rem + 1vw);
+        top: calc(1rem + 1vh);
+        padding: 0.5rem 0.8rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    /* Taille du texte quand le menu est ouvert */
+    #menuBtn:checked ~ #menu {
+        font-size: 1.1rem;
+    }
+
+
+    /* Slogan moins gros, hauteur automatique */
+    .slogan {
+        font-size: 1.8rem;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .presentation {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+    }
+
+
+    /* On change la variable : toutes les cartes passent
+       de 17.5rem à 9rem d'un coup */
+    :root {
+        --taille-carte: 9rem;
+    }
+
+    .offre-semaine {
+        height: auto;
+    }
+
+    /* flex-wrap: les cartes passent à la ligne
+       s'il n'y a pas assez de place */
+    .autre_menu {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
+    }
+
+    /* Bouton "Voir plus" plus petit */
+    .btn-voir-plus {
+        font-size: 1rem;
+        padding: 0.3rem 1.2rem;
+    }
+
+    footer {
+        height: auto;
+        border-radius: 1rem;
+        padding: 0.5rem 0.5rem 0;
+    }
+
+    /* Les 3 colonnes restent côte à côte */
+    .footer-contenu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.4rem;
+        padding: 0.5rem 0;
+    }
+
+    /* Texte petit pour que tout rentre */
+    .entete {
+        flex: 1 1 auto;             /* chaque colonne prend la place dont elle a besoin */
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    /* nowrap : le titre reste sur une seule ligne */
+    .entete h3 {
+        font-size: 0.95rem;
+        margin: 0 0 0.4rem 0;
+        white-space: nowrap;
+    }
+
+    .entete ul {
+        margin: 0;
+    }
+
+    .entete li {
+        margin: 0.15rem 0;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        padding: 0.5rem 0 0.8rem;
+    }
+
+    .titre-menu {
+        font-size: 1.6rem;
+        padding: 0.5rem 0.8rem;
+        margin: 0.5rem;
+    }
+
+    /* Texte et image passent l'un SOUS l'autre (column)
+       au lieu d'être côte à côte */
+    .Partie1, .Partie2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .Partie2 {
+        margin-top: 0.5rem;
+    }
+
+    /* Les boîtes prennent 92% de la largeur de l'écran
+       (vw = % de la largeur de l'écran) */
+    .sous-partie1, .sous-partie2,
+    .explication1, .explication2 {
+        box-sizing: border-box;     /* la bordure est comprise dans la largeur */
+        width: 92vw;
+        max-width: 34rem;           /* limite sur tablette */
+        border-width: 0.4rem;
+        border-radius: 1.2rem;
+    }
+
+    /* Boîte qui contient la photo + l'image de réduction */
+    .sous-partie1, .sous-partie2 {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;  /* inverse l'ordre : réduction en haut, photo en bas */
+        overflow: hidden;                /* coupe ce qui dépasse (garde les coins arrondis propres) */
+    }
+
+    /* On enlève "position: absolute" : les images se placent
+       normalement, l'une sous l'autre, et s'adaptent à l'écran */
+    .photo1, .photo2,
+    .reduction1, .reduction2 {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .photo1 img, .photo2 img,
+    .reduction1 img, .reduction2 img {
+        display: block;             /* enlève le petit espace vide sous l'image */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Texte des offres plus petit et plus lisible */
+    .explication1, .explication2 {
+        height: auto;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        padding: 1rem;
+    }
+
+    /* Le titre en gras de l'offre sur sa propre ligne */
+    .explication1 strong, .explication2 strong {
+        display: block;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* Une carte par ligne au lieu de deux côte à côte */
+    .ligne1, .ligne1\.1, .ligne1\.2, .ligne1\.3,
+    .ligne2, .ligne2\.1, .ligne2\.2, .ligne2\.3 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+        margin: 0.5rem 0 1rem;
+    }
+
+    /* La carte : image en haut, texte en dessous */
+    .vegan-burger, .tower-burger, .nuggets, .Chicken-Broast,
+    .chicken-fajita-pizza, .chicken-mexicaine-pizza,
+    .boisson-sucree, .autre-boisson,
+    .spicy-burger, .zinger-burger, .Injected-Broast, .Wings,
+    .chicken-spicy-Pizza, .chicken-tikka-pizza, .eau, .beer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;     /* image puis texte, de haut en bas */
+        position: relative;         /* sert de repère pour le badge du prix */
+        width: 92vw;
+        max-width: 24rem;
+        height: auto;               /* la carte grandit selon le texte */
+        border: 0.4rem solid var(--couleur-3);
+        border-radius: 1rem;
+        overflow: hidden;           /* garde les coins arrondis propres */
+        background-color: var(--couleur-2);
+    }
+
+    /* Image qui remplit toute la largeur de la carte */
+    .vegan-burger img, .tower-burger img, .nuggets img,
+    .Chicken-Broast img, .chicken-fajita-pizza img,
+    .chicken-mexicaine-pizza img, .boisson-sucree img,
+    .autre-boisson img,
+    .spicy-burger img, .zinger-burger img, .Injected-Broast img,
+    .Wings img, .chicken-spicy-Pizza img, .chicken-tikka-pizza img,
+    .eau img, .beer img {
+        display: block;
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;          /* l'image remplit la zone sans être déformée */
+        border: none;
+    }
+
+    /* Texte : "static" = il se place sous l'image
+       au lieu de flotter par-dessus (absolute) */
+    .texte1, .texte2, .texte3, .texte4,
+    .texte1\.1, .texte2\.1, .texte3\.1, .texte4\.1,
+    .texte1\.2, .texte2\.2, .texte3\.2, .texte4\.2,
+    .texte1\.3, .texte2\.3, .texte3\.3, .texte4\.3 {
+        position: static;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        border-top: 0.3rem solid var(--couleur-3);
+        padding: 0.8rem;
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    /* Prix : petit badge posé en haut à droite de l'image */
+    .prix {
+        position: absolute;
+        top: 0.6rem;
+        right: 0.6rem;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        height: auto;
+        padding: 0.2rem 0.8rem;
+        font-size: 1.1rem;
+        border-radius: 1rem;
+    }
+
+    /* sticky + top: 0 = la barre reste collée en haut quand on défile.
+       nowrap = les 4 boutons restent sur une seule ligne */
+    nav.menu-2 {
+        height: auto;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 0.3rem;
+        padding: 0.3rem;
+        margin: 0;
+        border-width: 0.2rem;
+        border-radius: 0.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;              /* la barre passe au-dessus du reste */
+    }
+
+    /* flex: 1 = les 4 boutons ont la même largeur */
+    nav.menu-2 a {
+        width: auto;
+        height: auto;
+        flex: 1;
+        padding: 0.25rem 0.2rem;
+        font-size: 1rem;
+        border-width: 0.15rem;
+        border-radius: 1rem;
+    }
+
+    /* Quand on clique sur "Pizza", la page s'arrête 3.5rem plus haut
+       pour que la barre ne cache pas le titre */
+    #Burger, #Broast, #Pizza, #Boisson {
+        scroll-margin-top: 3.5rem;
+    }
+}
