@@ -1,4 +1,3 @@
-/*page index*/
 @font-face {
     font-family: "Cormorant Garamond";
     src: url("fonts/CormorantGaramond-Regular.ttf") format("truetype");
@@ -21,76 +20,90 @@
     --police-titre: "Cormorant Garamond";
     --police-texte: Arial;
 
-    --taille-carte: 280px;
-    --rayon-carte: 15px;
-    --rayon-bouton: 20px;
+    --taille-carte: 17.5rem;
+    --rayon-carte: 0.9375rem;
+    --rayon-bouton: 1.25rem;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
 .header {
+    box-sizing: border-box;
     display: flex;
     background-image: url("Photos/background.jpg");
     background-size: cover;
-    height: 270px;
-    padding: 20px 40px;
+    height: 16.875rem;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
 .logo {
-    height: 270px;
-    width: 300px;
-    padding-left: 100px;
+    box-sizing: border-box;
+    height: 16rem;
+    width: 18.75rem;
+    position: absolute;
+    left: 6.25rem;
 }
 
 .logo img {
-    height: 240px;
-    width: 240px;
-    margin-bottom: 5px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-    border: 15px solid var(--couleur-1);
+    border: 0.95rem solid var(--couleur-1);
     animation: couleur 1s linear infinite, bouger 2s ease-in-out infinite;
 }
 
 .onglet {
-    width: 60px;
-    height: 34px;
+    width: 3.75rem;
+    height: 2.125rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 25px;
     background-color: var(--couleur-1);
-    padding: 15px;
-    border-radius: 10px;
-    align-self: start;
-    border: 5px solid var(--couleur-3);
+    padding: 1rem;
+    border-radius: 0.625rem;
+    border: 0.3125rem solid var(--couleur-3);
+    position: absolute;
+    right: calc(0.5rem + 1vw);
+    top: calc(1rem + 1vh);
 }
 
 .onglet span {
-    height: 3px;
+    height: 10%;
     width: 100%;
     background-color: var(--couleur-3);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 #menu {
+    box-sizing: border-box;
     display: none;
     position: absolute;
-    right: 160px;
-    bottom: 5px;
+    right: calc(6.75rem + 1vw);
+    top: calc(3.5rem + 1vh);
     background-color: var(--couleur-2);
-    padding: 20px;
-    line-height: 50px;
+    padding: 1.25rem;
+    line-height: 3.1rem;
 }
 
 #menuBtn {
     display: none;
+    position: absolute;
 }
 
 #menuBtn:checked ~ #menu {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 nav a {
@@ -107,41 +120,37 @@ body {
     color: var(--couleur-3);
 }
 
-main {
-    min-height: 1200px;
-    width: auto;
-}
-
 .slogan {
+    box-sizing: border-box;
     font-family: var(--police-titre),serif;
     background-image: url("Photos/background.jpg");
-    font-size: 80px;
-    height: 100px;
+    font-size: 5rem;
+    height: 6.25rem;
     width: auto;
     text-align: center;
     font-weight: 700;
-    margin: 5px;
+    margin: 0.3125rem;
     color: var(--couleur-1);
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 h2 {
     font-family: var(--police-titre),serif;
     color: var(--couleur-3);
     text-align: center;
-    font-size: 50px;
-    margin: 20px 0 10px 0;
+    font-size: 3.125rem;
+    margin: 1.25rem 0 0.625rem 0;
 }
 
 .presentation {
     font-family: var(--police-texte), sans-serif;
     color: var(--couleur-3);
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     width: auto;
     line-height: 1.2;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
 }
 
 .presentation a {
@@ -157,47 +166,51 @@ h2 {
 .offre-semaine {
     display: flex;
     align-items: center;
-    height: 280px;
+    height: 17.5rem;
     width: auto;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .offre {
+    box-sizing: border-box;
     width: var(--taille-carte);
     height: var(--taille-carte);
     position: relative;
 }
 
 .offre img {
-    width: 97%;
-    height: 97%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: var(--rayon-carte);
-    border: 5px solid var(--couleur-3);
+    border: 0.3125rem solid var(--couleur-3);
 }
 
 .autre_menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 280px;
+    height: 17.5rem;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .burger, .broast, .pizza, .drinks {
+    box-sizing: border-box;
     width: var(--taille-carte);
     height: var(--taille-carte);
     position: relative;
 }
 
 .burger img, .broast img, .pizza img, .drinks img {
-    width: 97%;
-    height: 97%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: var(--rayon-carte);
-    border: 5px solid var(--couleur-3);
+    border: 0.3125rem solid var(--couleur-3);
 }
 
 .zone-bouton {
@@ -205,70 +218,74 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    bottom: 1px;
+    bottom: 0;
 }
 
 .btn-voir-plus {
+    box-sizing: border-box;
     background-color: var(--couleur-3);
     color: var(--couleur-2);
-    padding: 8px 40px;
+    padding: 0.5rem 2.5rem;
     border-radius: var(--rayon-bouton);
     text-decoration: underline;
     font-family: var(--police-texte),sans-serif;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 1.6875rem;
 }
 
 footer {
+    box-sizing: border-box;
     background-color: var(--couleur-2);
-    height: 270px;
+    height: 16.875rem;
     width: 100%;
-    border-radius: 30px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    border-radius: 1.875rem;
+    margin-top: 0.625rem;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-contenu {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 0.625rem;
+    padding-bottom: 1.25rem;
 }
 
 .entete {
-    margin: 7px;
-    font-size: 22px;
+    margin: 0.4375rem;
+    font-size: 1.375rem;
     font-family: var(--police-texte),sans-serif;
 }
 
 .copyright {
     font-family: var(--police-titre),serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin:0;
+    padding-top: 0.625rem;
+    padding-bottom: 1.25rem;
+    margin: 0;
 }
 
 .entete h3 {
     color: var(--couleur-3);
     font-family: var(--police-titre),serif;
-    font-size: 35px;
+    font-size: 2.1875rem;
     font-weight: bold;
     text-decoration: underline;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625rem 0;
 }
 
 .entete ul {
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
 .entete li {
-    margin: 4px 0;
+    margin: 0.25rem 0;
 }
 
 .entete a {
@@ -280,116 +297,135 @@ footer {
     text-decoration: underline;
 }
 
-.titre-menu{
+.titre-menu {
+    box-sizing: border-box;
     font-family: var(--police-titre),serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
     align-items: center;
-    margin:10px 0;
+    margin: 0.625rem 0;
     color: var(--couleur-1);
     background-color: var(--couleur-3);
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
+
 .ligne1, .ligne1\.1, .ligne1\.2, .ligne1\.3 {
+
     display: flex;
-    height:450px;
+    height: 28.125rem;
     width: auto;
     justify-content: space-evenly;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
-.ligne2, .ligne2\.1, .ligne2\.2 , .ligne2\.3 {
+
+.ligne2, .ligne2\.1, .ligne2\.2, .ligne2\.3 {
     display: flex;
-    height: 450px;
+    height: 28.125rem;
     width: auto;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
-.vegan-burger, .tower-burger,.nuggets, .Chicken-Broast,.chicken-fajita-pizza, .chicken-mexicaine-pizza,
-.boisson-sucree, .autre-boisson{
+
+.vegan-burger, .tower-burger, .nuggets, .Chicken-Broast,
+.chicken-fajita-pizza, .chicken-mexicaine-pizza,
+.boisson-sucree, .autre-boisson {
     display: flex;
-    height:450px;
-    width:400px;
+    height: 28.125rem;
+    width: 25rem;
     align-content: center;
     position: relative;
 }
-.vegan-burger img, .tower-burger img, .nuggets img, .Chicken-Broast img, .chicken-fajita-pizza img,
-.chicken-mexicaine-pizza img,.boisson-sucree img, .autre-boisson img{
-    width: 380px;
-    height: 360px;
+
+.vegan-burger img, .tower-burger img, .nuggets img,
+.Chicken-Broast img, .chicken-fajita-pizza img,
+.chicken-mexicaine-pizza img, .boisson-sucree img,
+.autre-boisson img {
+    width: 23.75rem;
+    height: 22.5rem;
     object-fit: cover;
-    border: 10px solid var(--couleur-3);
+    border: 0.625rem solid var(--couleur-3);
 }
 
-.texte1,.texte2, .texte1\.1, .texte2\.1,.texte1\.2, .texte2\.2,.texte1\.3,.texte2\.3 {
-    height: 70px;
+.texte1, .texte2, .texte1\.1, .texte2\.1,
+.texte1\.2, .texte2\.2, .texte1\.3, .texte2\.3 {
+    height: 4.375rem;
     position: absolute;
     bottom: 0;
     Font-family: var(--police-texte), sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     text-align: center;
     background-color: var(--couleur-2);
     margin: 0;
-    border: 10px solid var(--couleur-3);
+    border: 0.625rem solid var(--couleur-3);
 }
-.spicy-burger, .zinger-burger,.Injected-Broast, .Wings, .chicken-spicy-Pizza, .chicken-tikka-pizza,
-.eau,.beer{
+
+.spicy-burger, .zinger-burger, .Injected-Broast, .Wings,
+.chicken-spicy-Pizza, .chicken-tikka-pizza, .eau, .beer {
     display: flex;
-    height:450px;
-    width:400px;
+    height: 28.125rem;
+    width: 25rem;
     align-content: center;
     position: relative;
 }
-.spicy-burger img, .zinger-burger img, .Injected-Broast img, .Wings img, .chicken-spicy-Pizza img,
-.chicken-tikka-pizza img, .eau img, .beer img{
-    width: 380px;
-    height: 360px;
+
+.spicy-burger img, .zinger-burger img, .Injected-Broast img,
+.Wings img, .chicken-spicy-Pizza img, .chicken-tikka-pizza img,
+.eau img, .beer img {
+    width: 23.75rem;
+    height: 22.5rem;
     object-fit: cover;
-    border: 10px solid var(--couleur-3);
+    border: 0.625rem solid var(--couleur-3);
 }
 
-.texte3,.texte4, .texte3\.1, .texte4\.1, .texte3\.2, .texte4\.2, .texte3\.3, .texte4\.3 {
-    height: 70px;
+.texte3, .texte4, .texte3\.1, .texte4\.1,
+.texte3\.2, .texte4\.2, .texte3\.3, .texte4\.3 {
+    height: 4.375rem;
     position: absolute;
     bottom: 0;
     Font-family: var(--police-texte), sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     text-align: center;
     background-color: var(--couleur-2);
     margin: 0;
-    border: 10px solid var(--couleur-3);
+    border: 0.625rem solid var(--couleur-3);
 }
-.prix{
+
+.prix {
     position: absolute;
-    bottom:100px;
-    left:250px;
+    bottom: 6.25rem;
+    left: 15.625rem;
     font-family: var(--police-texte),sans-serif;
-    font-size: 25px;
-    font-weight:bold;
-    height: 30px;
-    width: 130px;
+    font-size: 1.5625rem;
+    font-weight: bold;
+    height: 1.875rem;
+    width: 8.125rem;
     background-color: var(--couleur-1);
     color: var(--couleur-3);
-    border-radius: 30px;
-    border: 1px solid var(--couleur-3);
+    border-radius: 1.875rem;
+    border: 0.0625rem solid var(--couleur-3);
     align-items: center;
     text-align: center;
 }
+
 .texte1\.2, .texte2\.2 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
+
 .texte3\.2, .texte4\.2 {
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
-.ligne2\.3{
-    margin-bottom: 10px;
+
+.ligne2\.3 {
+    margin-bottom: 0.625rem;
 }
-.texte2\.3{
-    font-size: 19px;
+
+.texte2\.3 {
+    font-size: 1.1875rem;
 }
 
 @keyframes couleur {
@@ -413,103 +449,115 @@ footer {
         border-top-color: yellow;
     }
 }
+
 @keyframes bouger {
     0% {
         transform: translateX(0);
     }
 
     50% {
-        transform: translateX(60px);
+        transform: translateX(3.75rem);
     }
 
     100% {
         transform: translateX(0);
     }
 }
+
 .Partie1, .Partie2 {
-    height: 420px;
+    height: 26.25rem;
     width: auto;
     display: flex;
     position: relative;
     justify-content: space-evenly;
     background-color: var(--couleur-2);
-    padding:20px 0;
+    padding: 1.25rem 0;
 }
-.Partie2{
-    margin-top: 30px;
-}
-.sous-partie1, .sous-partie2 {
-    height:400px;
-    width: 400px;
-    display: flex;
-    border: 10px solid var(--couleur-3);
-    border-radius: 30px;
-    position: relative;
 
+.Partie2 {
+    margin-top: 1.875rem;
 }
-.photo1,.photo2{
-    height:250px;
-    width:400px;
+
+.sous-partie1, .sous-partie2 {
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    border: 0.625rem solid var(--couleur-3);
+    border-radius: 1.875rem;
+    position: relative;
+}
+
+.photo1, .photo2 {
+    height: 15.625rem;
+    width: 25rem;
     display: flex;
     position: absolute;
-    bottom:0;
+    bottom: 0;
 }
-.photo2{
-    height:280px;
+
+.photo2 {
+    height: 17.5rem;
 }
-.photo1 img, .photo2 img{
-    height:100%;
-    width:100%;
+
+.photo1 img, .photo2 img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
-.reduction1, .reduction2{
+
+.reduction1, .reduction2 {
     position: absolute;
-    height:150px;
-    width:400px;
-    bottom: 250px;
-    display:flex;
+    height: 9.375rem;
+    width: 25rem;
+    bottom: 15.625rem;
+    display: flex;
 }
-.reduction2{
-    height:120px;
-    bottom: 280px;
+
+.reduction2 {
+    height: 7.5rem;
+    bottom: 17.5rem;
 }
+
 .reduction1 img, .reduction2 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.explication1, .explication2{
-    font-size:38px;
+
+.explication1, .explication2 {
+    font-size: 2.375rem;
     position: relative;
     text-align: center;
-    height:400px;
-    width:500px;
-    font-family:var(--police-texte), sans-serif;
+    height: 25rem;
+    width: 31.25rem;
+    font-family: var(--police-texte), sans-serif;
     align-content: center;
     background-color: var(--couleur-1);
-    border-radius: 30px;
-    border: 10px solid var(--couleur-3);
+    border-radius: 1.875rem;
+    border: 0.625rem solid var(--couleur-3);
 }
-.menu-2{
-    height:100px;
-    width:auto;
-    display:flex;
+
+.menu-2 {
+    height: 6.25rem;
+    width: auto;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: sticky;
-    top:1px;
+    top: 0.0625rem;
     z-index: 1000;
     background-color: var(--couleur-3);
-    border-radius: 10px;
-    border: 10px solid var(--couleur-3);
-    margin-top: 10px;
+    border-radius: 0.625rem;
+    border: 0.625rem solid var(--couleur-3);
+    margin-top: 0.625rem;
 }
-.menu-2 a{
-    height:60px;
-    width:130px;
-    border: 5px solid var(--couleur-3);
-    border-radius: 30px;
-    Font-size: 38px;
+
+.menu-2 a {
+    height: 3.75rem;
+    width: 8.125rem;
+    border: 0.3125rem solid var(--couleur-3);
+    border-radius: 1.875rem;
+    Font-size: 2.375rem;
     color: var(--couleur-3);
     font-family: var(--police-titre),serif;
     font-weight: bold;
@@ -518,17 +566,21 @@ footer {
     align-items: center;
     background-color: var(--couleur-2);
 }
+
 #Burger, #Broast, #Pizza, #Boisson {
-    scroll-margin-top: 130px;
+    scroll-margin-top: 8.125rem;
 }
-#Boisson{
-    padding-bottom:40px;
+
+#Boisson {
+    padding-bottom: 2.5rem;
 }
+
 .menu-2 a:hover {
     text-decoration: underline;
     background-color: var(--couleur-1);
     transform: scale(1.1);
 }
+
 html {
     scroll-behavior: smooth;
 }
