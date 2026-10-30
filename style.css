@@ -330,76 +330,57 @@ footer {
 
 .vegan-burger, .tower-burger, .nuggets, .Chicken-Broast,
 .chicken-fajita-pizza, .chicken-mexicaine-pizza,
-.boisson-sucree, .autre-boisson {
+.boisson-sucree, .autre-boisson,
+.spicy-burger, .zinger-burger, .Injected-Broast, .Wings,
+.chicken-spicy-Pizza, .chicken-tikka-pizza, .eau, .beer {
+    box-sizing: border-box;
     display: flex;
-    height: 28.125rem;
-    width: 25rem;
-    align-content: center;
+    flex-direction: column;
     position: relative;
+    width: 92vw;
+    max-width: 24rem;
+    height: auto;               /* la carte grandit selon le texte */
+    border: 0.4rem solid var(--couleur-3);
+    border-radius: 1rem;
+    overflow: hidden;           /* garde les coins arrondis propres */
+    background-color: var(--couleur-2);
 }
 
 .vegan-burger img, .tower-burger img, .nuggets img,
 .Chicken-Broast img, .chicken-fajita-pizza img,
 .chicken-mexicaine-pizza img, .boisson-sucree img,
-.autre-boisson img {
-    width: 23.75rem;
-    height: 22.5rem;
-    object-fit: cover;
-    border: 0.625rem solid var(--couleur-3);
-}
-
-.texte1, .texte2, .texte1\.1, .texte2\.1,
-.texte1\.2, .texte2\.2, .texte1\.3, .texte2\.3 {
-    height: 4.375rem;
-    position: absolute;
-    bottom: 0;
-    Font-family: var(--police-texte), sans-serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-    line-height: 1;
-    text-align: center;
-    background-color: var(--couleur-2);
-    margin: 0;
-    border: 0.625rem solid var(--couleur-3);
-}
-
-.spicy-burger, .zinger-burger, .Injected-Broast, .Wings,
-.chicken-spicy-Pizza, .chicken-tikka-pizza, .eau, .beer {
-    display: flex;
-    height: 28.125rem;
-    width: 25rem;
-    align-content: center;
-    position: relative;
-}
-
+.autre-boisson img,
 .spicy-burger img, .zinger-burger img, .Injected-Broast img,
 .Wings img, .chicken-spicy-Pizza img, .chicken-tikka-pizza img,
 .eau img, .beer img {
-    width: 23.75rem;
-    height: 22.5rem;
+    display: block;
+    width: 100%;
+    height: 20rem;
     object-fit: cover;
-    border: 0.625rem solid var(--couleur-3);
+    border: none;
 }
 
-.texte3, .texte4, .texte3\.1, .texte4\.1,
-.texte3\.2, .texte4\.2, .texte3\.3, .texte4\.3 {
-    height: 4.375rem;
-    position: absolute;
-    bottom: 0;
-    Font-family: var(--police-texte), sans-serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-    line-height: 1;
-    text-align: center;
-    background-color: var(--couleur-2);
-    margin: 0;
-    border: 0.625rem solid var(--couleur-3);
+.texte1, .texte2, .texte3, .texte4,
+.texte1\.1, .texte2\.1, .texte3\.1, .texte4\.1,
+.texte1\.2, .texte2\.2, .texte3\.2, .texte4\.2,
+.texte1\.3, .texte2\.3, .texte3\.3, .texte4\.3 {
+    position: static;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-top: 0.3rem solid var(--couleur-3);
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    line-height: 1.3;
 }
-
+.texte1\.2, .texte2\.2, .texte3\.2, .texte4\.2{
+    font-size: 1.2rem;
+}
 .prix {
     position: absolute;
-    bottom: 6.25rem;
-    left: 15.625rem;
+    bottom: 8rem;
+    left: 14.5rem;
     font-family: var(--police-texte),sans-serif;
     font-size: 1.5625rem;
     font-weight: bold;
@@ -413,21 +394,10 @@ footer {
     text-align: center;
 }
 
-.texte1\.2, .texte2\.2 {
-    font-size: 1.125rem;
-}
-
-.texte3\.2, .texte4\.2 {
-    font-size: 1.0625rem;
-}
-
 .ligne2\.3 {
     margin-bottom: 0.625rem;
 }
 
-.texte2\.3 {
-    font-size: 1.1875rem;
-}
 
 @keyframes couleur {
     0% {
@@ -667,7 +637,7 @@ img {
     /* On change la variable : toutes les cartes passent
        de 17.5rem à 9rem d'un coup */
     :root {
-        --taille-carte: 9rem;
+        --taille-carte: 11rem;
     }
 
     .offre-semaine {
@@ -766,7 +736,7 @@ img {
     .sous-partie1, .sous-partie2 {
         height: auto;
         display: flex;
-        flex-direction: column-reverse;  /* inverse l'ordre : réduction en haut, photo en bas */
+        flex-direction: column;
         overflow: hidden;                /* coupe ce qui dépasse (garde les coins arrondis propres) */
     }
 
@@ -868,9 +838,9 @@ img {
     /* Prix : petit badge posé en haut à droite de l'image */
     .prix {
         position: absolute;
-        top: 0.6rem;
+
         right: 0.6rem;
-        bottom: auto;
+        bottom: 6.5rem;
         left: auto;
         width: auto;
         height: auto;
