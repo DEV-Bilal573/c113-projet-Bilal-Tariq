@@ -839,8 +839,9 @@ img {
     .prix {
         position: absolute;
 
-        right: 0.6rem;
-        bottom: 6.5rem;
+        right: 0.4rem;
+        top: 0.5rem;
+        bottom: auto;
         left: auto;
         width: auto;
         height: auto;
