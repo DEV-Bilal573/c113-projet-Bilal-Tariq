@@ -384,7 +384,7 @@ footer {
 .prix {
     position: absolute;
     bottom: 8rem;
-    left: 14.5rem;
+    left: 13.5rem;
     font-family: var(--police-texte),sans-serif;
     font-size: 1.5625rem;
     font-weight: bold;
@@ -641,14 +641,13 @@ img {
         height: auto;
     }
 
-    /* GRID : organise les éléments du menu */
     .autre_menu {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        justify-items: center;
-        height: auto;
-        gap: 1rem;
-    }
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            height: auto;
+        }
+
 
     /* Bouton Voir plus */
     .btn-voir-plus {
@@ -663,10 +662,9 @@ img {
         padding: 0.5rem 0.5rem 0;
     }
 
-    /* GRID : les 3 colonnes restent côte à côte */
     .footer-contenu {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: wrap;
         align-items: start;
         gap: 0.4rem;
         padding: 0.5rem 0;
@@ -681,7 +679,6 @@ img {
     .entete h3 {
         font-size: 0.95rem;
         margin: 0 0 0.4rem 0;
-        white-space: nowrap;
     }
 
     .entete ul {
