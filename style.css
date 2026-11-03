@@ -479,7 +479,7 @@ footer {
     object-fit: cover;
 }
 
-.reduction1, .reduction2 {
+.reduction1{
     position: absolute;
     height: 9.375rem;
     width: 25rem;
