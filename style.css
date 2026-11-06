@@ -439,15 +439,18 @@ footer {
 }
 
 .Partie1, .Partie2 {
-    height: 26.25rem;
-    width: auto;
+    height: auto;
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: space-evenly;
+    align-items: center;
     background-color: var(--couleur-2);
     padding: 1.25rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
-
 .Partie2 {
     margin-top: 1.875rem;
 }
@@ -489,8 +492,9 @@ footer {
 
 .reduction2 {
     height: 7.5rem;
+    width: 25rem;
     bottom: 17.5rem;
-}
+    }
 
 .reduction1 img, .reduction2 img {
     height: 100%;
@@ -626,6 +630,8 @@ img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
 }
 .galerie2{
     padding-top: 2.5rem;
@@ -700,9 +706,6 @@ img {
     border: 0.625rem solid var(--couleur-3);
     border-radius: 0.625rem;
 }
-
-
-
 
 /* VERSION TÉLÉPHONE AVEC CSS GRID
    Tout ce qui est dans les accolades ne marche que
