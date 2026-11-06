@@ -604,6 +604,7 @@ img {
     font-family: var(--police-titre), serif;
     font-weight: bold;
     color: var(--couleur-3);
+    text-align: center;
 }
 .block2{
     background-color: var(--couleur-2);
