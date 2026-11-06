@@ -1,10 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fried-Chicken</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="Photos/logo.jpg" alt="logo">
+        </div>
+        <!-- Checkbox qui permet d'ouvrir le menu quand on clique sur le label -->
+        <input type="checkbox" id="menuBtn">
+        <!-- Le for relie le label à la checkbox -->
+        <label class="onglet" for="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
 
+        </label>
+
+        <nav id="menu">
+            <a href="index.html">Accueil</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="propos.html">À propos</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <article class="block1">
+<h1 class="block1.1">BIENVENUE CHEZ NOUS</h1>
+    <h1 class="block1.2">Notre Univers, à découvrir.</h1>
+    </article>
+    <article class="block2">
+        <h2 class="block2.1"> Découvrez notre restaurant</h2>
+        <h2 class="block2.2">Nos espaces, notre équipe et les incontournables de la maison.</h2>
+        <div class="galerie1">
+        <div class="exterieur">
+            <img src="Photos/exterieur.jpg" alt="extérieur">
+            <div class="texte1_exterieur">
+                <p>Notre extérieur</p>
+            </div>
+            <div class="texte2_exterieur">
+                <p>Un accueil chaleureux dès votre arrivée.</p>
+            </div>
+        </div>
+            <div class="interieur">
+                <img src="Photos/Interieur.png" alt="Intérieur">
+                <div class="texte1_interieur">
+                    <p>Notre intérieur</p>
+                </div>
+                <div class="texte2_interieur">
+                    <p>Un espace agréable pour partager un bos repas.</p>
+                </div>
+        </div>
+        </div>
+        <div class="galerie2">
+            <div class="equipe">
+                <img src="Photos/Equipe.png" alt="équipe">
+                <div class="texte1_équipe">
+                    <p>Notre équipe</p>
+                </div>
+                <div class="texte2_équipe">
+                    <p>Une équipe motivée à votre service.</p>
+                </div>
+            </div>
+            <div class="Cuisine">
+                <img src="Photos/Kitchen.png" alt="Cuisine">
+                <div class="texte1_Cuisine">
+                    <p>Notre Cuisine</p>
+                </div>
+                <div class="texte2_Cuisine">
+                    <p>Un espace spacieux et moderne.</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="feedback1">
+            Ils parlent de nous.
+        </h2>
+        <h2 class="feedack2">
+            La satisfaction de nos clients nous fait avancer.
+        </h2>
+        <h2 class="feedback3">
+            ⭐⭐⭐⭐⭐-Vos avis comptent!
+        </h2>
+        <div class="avis_client">
+            <img src="Photos/Feedback.png" alt="avis">
+        </div>
+    </article>
+
+</main>
+<footer>
+
+    <div class="footer-contenu">
+
+        <div class="entete">
+            <h3>Horaires d'ouverture :</h3>
+            <ul>
+                <li>Lundi-Vendredi : 11h00 - 20h00</li>
+                <li>Week-end : 12h00 - 00h00</li>
+            </ul>
+        </div>
+
+        <div class="entete">
+            <h3>Contact :</h3>
+            <ul>
+                <li><a href="mailto:fried.chicks@gmail.com">fried.chicks@gmail.com</a></li>
+                <li><a href="tel:+41233823838">+41 23 382 38 38</a></li>
+            </ul>
+        </div>
+
+        <div class="entete">
+            <h3>Adresse :</h3>
+            <ul>
+                <li> Rue de l'Avenir 33</li>
+                <li> 2800 Delémont</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Fried Chicks. Tous droits réservés.
+    </p>
+
+</footer>
 </body>
 </html>

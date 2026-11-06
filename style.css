@@ -559,6 +559,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* Si quelque chose dépasse sur le côté, on le coupe
    pour que la page ne glisse pas vers la droite.
  */
@@ -570,15 +571,145 @@ html, body {
 img {
     max-width: 100%;
 }
+.block1{
+    background-color: var(--couleur-1);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.block1\.1{
+    margin:0;
+    padding: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: var(--police-texte),serif;
+    font-weight: bold;
+    color: var(--couleur-3);
+}
+.block1\.2 {
+    padding-bottom: 2.5rem;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: var(--police-titre), serif;
+    font-weight: bold;
+    color: var(--couleur-3);
+}
+.block2{
+    background-color: var(--couleur-2);
+    height: auto;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+.block2\.1{
+    margin:0;
+    padding: 1rem 0 0 0;
+    font-size: 4rem;
+    font-family: var(--police-texte),serif;
+    font-weight: bold;
+}
+.block2\.2{
+    margin:0;
+    padding: 1rem 0 1rem 0;
+    font-size: 4rem;
+    font-family: var(--police-titre),serif;
+}
+.galerie1,.galerie2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.galerie2{
+    padding-top: 2.5rem;
+}
+.exterieur,.interieur,.Cuisine,.equipe{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    border: 0.625rem solid var(--couleur-3);
+    border-radius: 1rem;
+}
+.exterieur img, .interieur img, .Cuisine img, .equipe img{
+    opacity:0.9;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
-/* =====================================================
-   VERSION TÉLÉPHONE AVEC CSS GRID
+.texte1_exterieur,.texte2_exterieur,.texte1_interieur,.texte2_interieur, .texte1_Cuisine
+,.texte1_équipe,.texte2_Cuisine,.texte2_équipe{
+    height: auto;
+    width: 100%;
+    font-family: var(--police-texte),serif;
+    font-weight: bold;
+    position:absolute;
+    bottom: 2rem;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.texte2_exterieur,.texte2_équipe{
+    position: absolute;
+    bottom: 0;
+}
+.texte2_interieur,.texte2_Cuisine{
+   font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+}
+.feedback1{
+    margin-top: 7rem;
+    font-size: 4rem;
+    font-family: var(--police-texte),serif;
+    font-weight: bold;
+}
+.feedback2.feedback3{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 4rem;
+    font-family: var(--police-titre),serif;
+}
+.feedback3{
+    margin-bottom: 2rem;
+}
+.avis_client{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.avis_client img{
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border: 0.625rem solid var(--couleur-3);
+    border-radius: 0.625rem;
+}
+
+
+
+
+/* VERSION TÉLÉPHONE AVEC CSS GRID
    Tout ce qui est dans les accolades ne marche que
    si l'écran fait 768px de large ou moins.
-   Sur PC, rien de tout ça ne s'applique.
-   ===================================================== */
+   Sur PC, rien de tout ça ne s'applique.*/
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     /* Bandeau plus petit */
     .header {
@@ -814,7 +945,7 @@ img {
     .texte1, .texte2, .texte3, .texte4,
     .texte1\.1, .texte2\.1, .texte3\.1, .texte4\.1,
     .texte1\.2, .texte2\.2, .texte3\.2, .texte4\.2,
-    .texte1\.3, .texte2\.3, .texte3\.3, .texte4\.3 {
+    .texte1\.3, .texte2\.3, .texte3\.3, .texte4\.3{
         position: static;
         height: auto;
         width: 100%;
@@ -870,5 +1001,96 @@ img {
     /* Décalage des titres pour la barre sticky */
     #Burger, #Broast, #Pizza, #Boisson {
         scroll-margin-top: 3.5rem;
+
     }
+    .block1\.1{
+        font-size:1.5rem;
+        text-align: center;
+    }
+    .block1\.2 {
+        padding: 0;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .block2{
+        background-color: var(--couleur-2);
+        height: auto;
+        width: 100%;
+        padding-bottom: 2.5rem;
+    }
+    .block2\.1{
+        font-size: 1.5rem;
+    }
+    .block2\.2{
+        font-size: 1.5rem;
+    }
+    .galerie1, .galerie2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+    }
+
+    .exterieur, .interieur, .Cuisine, .equipe {
+        width: 92%;
+        max-width: 30rem;
+        height: 25rem;
+        box-sizing: border-box;
+        position: relative;
+        gap:1rem;
+    }
+
+    .exterieur img,
+    .interieur img,
+    .Cuisine img,
+    .equipe img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .texte1_interieur, .texte1_exterieur, .texte1_équipe,.texte1_Cuisine {
+        position: absolute;
+        bottom: 2.5rem;
+    }
+    .texte2_interieur, .texte2_exterieur, .texte2_équipe,.texte2_Cuisine{
+        position: absolute;
+        bottom: 0.3rem;
+        font-size:1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+}
+    .feedback1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-family: var(--police-texte),serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    .feedback2.feedback3{
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 2rem;
+        font-family: var(--police-titre),serif;
+        text-align: center;
+    }
+    .feedback3{
+        margin-bottom: 1rem;
+    }
+    .avis_client{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        justify-items: center;
+    }
+    .avis_client img{
+        width: 92%;
+        max-width: 30rem;
+        height: 25rem;
+    }
+
 }
