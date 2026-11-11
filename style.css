@@ -262,8 +262,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: start;
-    gap: 0.4rem;
-    justify-content: space-between;
+    gap: 0.4rem 1.5rem;
+    justify-content: center;
     align-content: center;
     padding: 0.5rem 0;
 }
@@ -727,10 +727,10 @@ img {
 
 /* VERSION GRAND ÉCRAN (PC / tablette large)
    Tout ce qui est dans les accolades ne s'applique que
-   si l'écran fait 801px de large ou plus.
+   si l'écran fait 750px de large ou plus.
    Ça remplace le style téléphone écrit plus haut. */
 
-@media (min-width: 801px) {
+@media (min-width: 750px) {
 
     :root {
         --taille-carte: 17.5rem;
