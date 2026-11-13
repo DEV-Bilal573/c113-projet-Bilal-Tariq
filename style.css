@@ -610,9 +610,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
-    font-family: var(--police-texte),serif;
+    font-family: var(--police-titre),serif;
     font-weight: bold;
     color: var(--couleur-3);
 }
@@ -623,8 +623,8 @@ img {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    font-size: 1.5rem;
-    font-family: var(--police-titre), serif;
+    font-size: 1.3rem;
+    font-family: var(--police-texte), serif;
     font-weight: bold;
     color: var(--couleur-3);
     text-align: center;
@@ -638,15 +638,15 @@ img {
 .block2\.1{
     margin:0;
     padding: 1rem 0 0 0;
-    font-size: 1.5rem;
-    font-family: var(--police-texte),serif;
+    font-size: 1.8rem;
+    font-family: var(--police-titre),serif;
     font-weight: bold;
 }
 .block2\.2{
     margin:0;
     padding: 1rem 0 1rem 0;
-    font-size: 1.5rem;
-    font-family: var(--police-titre),serif;
+    font-size: 1.3rem;
+    font-family: var(--police-texte),serif;
 }
 .galerie1,.galerie2{
     height: auto;
@@ -779,7 +779,7 @@ img {
 
     /* VERSION GRAND ÉCRAN (PC / tablette large)
        Tout ce qui est dans les accolades ne s'applique que
-       si l'écran fait 750px de large ou plus.
+       si l'écran fait 800px de large ou plus.
        Ça remplace le style téléphone écrit plus haut. */
 
     @media (min-width: 800px) {
@@ -1062,7 +1062,7 @@ img {
         .block1\.2 {
             padding-bottom: 2.5rem;
             margin-bottom: 0;
-            font-size: 5rem;
+            font-size: 2rem;
         }
 
         .block2\.1 {
@@ -1070,7 +1070,8 @@ img {
         }
 
         .block2\.2 {
-            font-size: 4rem;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         .galerie1, .galerie2 {
