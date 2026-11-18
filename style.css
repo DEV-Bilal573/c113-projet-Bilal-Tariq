@@ -943,6 +943,9 @@ img {
         .texte1\.2, .texte2\.2, .texte3\.2, .texte4\.2 {
             font-size: 1.2rem;
         }
+        .texte2\.3{
+        font-size: 1.2rem;
+    }
 
         .prix {
             right: auto;
