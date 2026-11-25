@@ -140,4 +140,4 @@ Claude pour faire corrigès le code et demander un avis pour améliorer, Chatgpt
 ### Améliorations possibles
 - Ce que j’ajouterais avec plus de temps : rien, je suis content.
 - Fonctionnalités bonus envisagées : animations et transitions.
-- Compétences à approfondir : Flexbox, Grid 
+- Compétences à approfondir : Flexbox, Grid et reponsive
