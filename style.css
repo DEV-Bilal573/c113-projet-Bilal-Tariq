@@ -122,6 +122,9 @@ main {
     flex-direction: column;
     font-size: 1.1rem;
 }
+header .checkbox {
+    display: none;
+}
 
 nav a {
     text-decoration: none;
@@ -140,6 +143,7 @@ body {
 .slogan {
     box-sizing: border-box;
     font-family: var(--police-titre),serif;
+    background-color: var(--couleur-3);
     background-image: url("Photos/background.jpg");
     font-size: 1.8rem;
     height: auto;
@@ -150,6 +154,7 @@ body {
     margin: 0.3125rem;
     color: var(--couleur-1);
     border-radius: 1.875rem;
+
 }
 
 h2 {
@@ -662,6 +667,7 @@ img {
     padding-top: 2.5rem;
 }
 .exterieur,.interieur,.Cuisine,.equipe{
+    background-color: var(--couleur-3);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -670,7 +676,7 @@ img {
     max-width: 30rem;
     gap: 1rem;
     position: relative;
-    border: 0.625rem solid var(--couleur-3);
+    border: 0.625rem solid var(--couleur-2);
     border-radius: 1rem;
 }
 .exterieur img, .interieur img, .Cuisine img, .equipe img{
