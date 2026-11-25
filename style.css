@@ -676,7 +676,7 @@ img {
     max-width: 30rem;
     gap: 1rem;
     position: relative;
-    border: 0.625rem solid var(--couleur-2);
+    border: 0.625rem solid var(--couleur-3);
     border-radius: 1rem;
 }
 .exterieur img, .interieur img, .Cuisine img, .equipe img{
